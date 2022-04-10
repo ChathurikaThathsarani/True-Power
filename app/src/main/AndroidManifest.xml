@@ -10,21 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TruePower">
         <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".RoutineActivity"
             android:exported="true"
-            android:label="@string/my_routine"/>
+            android:label="@string/my_routine" />
         <activity
             android:name=".HealthActivity"
             android:exported="true"
-            android:label="@string/my_health"/>
+            android:label="@string/my_health" />
         <activity
             android:name=".WorkoutActivity"
             android:exported="true"
-            android:label="@string/my_workout"/>
+            android:label="@string/my_workout" />
         <activity
             android:name=".MealActivity"
             android:exported="true"
-            android:label="@string/my_meal"/>
+            android:label="@string/my_meal" />
         <activity
             android:name=".HomeActivity"
             android:exported="true"

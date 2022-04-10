@@ -3,16 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/drawable/background_edittext.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/drawable/ic_baseline_health.xml" value="0.23282051282051283" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/drawable/ic_baseline_home.xml" value="0.24722222222222223" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/drawable/ic_baseline_meal.xml" value="0.23282051282051283" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/drawable/ic_baseline_meals.xml" value="0.24722222222222223" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/drawable/ic_baseline_routine.xml" value="0.23282051282051283" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/drawable/ic_baseline_workout.xml" value="0.23282051282051283" />
+        <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/drawable/round_border.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/drawable/selector.xml" value="0.24722222222222223" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/font/font.xml" value="0.24722222222222223" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/activity_health.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/activity_meal.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/activity_routine.xml" value="0.25416666666666665" />

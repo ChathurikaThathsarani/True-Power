@@ -5,4 +5,10 @@
     <string name="my_workout">My Workout</string>
     <string name="my_health">My Health</string>
     <string name="my_routine">My Routine</string>
+    <string name="welcome">Welcome back</string>
+    <string name="login_account">Login to your account</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="login">Login</string>
+
 </resources>
