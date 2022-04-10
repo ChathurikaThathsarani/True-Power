@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:iconTint="@color/white">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home"
+        android:title=""
+        />
+    <item
+        android:id="@+id/meal"
+        android:icon="@drawable/ic_baseline_meal"
+        android:title=""
+        />
+    <item
+        android:id="@+id/workout"
+        android:icon="@drawable/ic_baseline_workout"
+        android:title=""
+        />
+    <item
+        android:id="@+id/health"
+        android:icon="@drawable/ic_baseline_health"
+        android:title=""
+        />
+    <item
+        android:id="@+id/routine"
+        android:icon="@drawable/ic_baseline_routine"
+        android:title=""
+        />
+
+</menu>

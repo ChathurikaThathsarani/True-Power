@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">True Power</string>
+    <string name="home">Home</string>
+    <string name="my_meal">My Meal</string>
+    <string name="my_workout">My Workout</string>
+    <string name="my_health">My Health</string>
+    <string name="my_routine">My Routine</string>
+</resources>

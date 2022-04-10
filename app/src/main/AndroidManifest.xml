@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.truepower">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TruePower">
+        <activity
+            android:name=".RoutineActivity"
+            android:exported="true"
+            android:label="@string/my_routine"/>
+        <activity
+            android:name=".HealthActivity"
+            android:exported="true"
+            android:label="@string/my_health"/>
+        <activity
+            android:name=".WorkoutActivity"
+            android:exported="true"
+            android:label="@string/my_workout"/>
+        <activity
+            android:name=".MealActivity"
+            android:exported="true"
+            android:label="@string/my_meal"/>
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:label="@string/home" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
