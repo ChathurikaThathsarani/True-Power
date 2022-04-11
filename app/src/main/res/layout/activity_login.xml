@@ -11,8 +11,8 @@
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="262dp"
-        android:layout_marginEnd="92dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="116dp"
         android:text="@string/welcome"
         android:textColor="@color/dark_green"
         android:textSize="30sp"
@@ -20,33 +20,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/login_account"
-        android:textColor="@android:color/darker_gray"
-        android:textColorLink="@color/dark_green"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.559"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome" />
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="407dp"
         android:layout_height="142dp"
-        android:layout_marginTop="372dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginTop="48dp"
         android:orientation="vertical"
         android:padding="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/welcome">
 
         <EditText
             android:id="@+id/editTextTextEmailAddress3"
@@ -57,6 +40,7 @@
             android:ems="10"
             android:hint="@string/hint_email"
             android:inputType="textEmailAddress"
+            android:textAlignment="textStart"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <EditText
@@ -75,16 +59,12 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="316dp"
+        android:layout_width="373dp"
         android:layout_height="48dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="152dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/round_border"
         android:text="@string/login"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

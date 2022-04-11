@@ -10,8 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TruePower">
         <activity
+            android:name=".AddRoutineActivity"
+            android:exported="true"
+            android:label="@string/add_routine" />
+        <activity
             android:name=".LoginActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="@string/login" />
         <activity
             android:name=".RoutineActivity"
             android:exported="true"

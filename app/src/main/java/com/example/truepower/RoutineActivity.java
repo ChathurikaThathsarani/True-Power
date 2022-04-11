@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -49,5 +50,10 @@ public class RoutineActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+    public void addRoutine(View view) {
+        Intent intent = new Intent(this, AddRoutineActivity.class);
+        startActivity(intent);
     }
 }

@@ -10,5 +10,13 @@
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
     <string name="login">Login</string>
+    <string name="add_routine">Add Routine</string>
+    <string name="routine_name">Routine Name</string>
+    <string name="day_to_complete">Day To Complete</string>
+    <string name="description">Description</string>
+    <string name="status">Status</string>
+    <string name="submit">Submit</string>
+    <string name="add_route">Add your routine</string>
+
 
 </resources>

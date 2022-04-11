@@ -13,6 +13,7 @@
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/drawable/round_border.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/drawable/selector.xml" value="0.24722222222222223" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/font/font.xml" value="0.24722222222222223" />
+        <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/activity_add_routine.xml" value="0.264" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/activity_health.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
@@ -20,6 +21,7 @@
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/activity_meal.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/activity_routine.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/activity_workout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/list_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/menu/menu_navigation_home.xml" value="0.25416666666666665" />
       </map>
     </option>
