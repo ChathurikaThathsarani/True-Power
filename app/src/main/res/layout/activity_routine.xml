@@ -24,6 +24,9 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:onClick="addRoutine"
-        app:srcCompat="@mipmap/ic_add" />
+        app:srcCompat="@mipmap/ic_add"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
 
 </RelativeLayout>

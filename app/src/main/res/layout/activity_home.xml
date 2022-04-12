@@ -8,16 +8,16 @@
     tools:context=".HomeActivity"
     android:background="@drawable/wave"
     >
+
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:rowCount="2"
-        android:columnCount="2"
-        android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="100dp"
-        >
+        android:layout_marginBottom="80dp"
+        android:columnCount="2"
+        android:rowCount="2">
 
         <androidx.cardview.widget.CardView
             android:layout_width="155dp"
@@ -30,8 +30,7 @@
             android:layout_margin="8dp"
             app:cardCornerRadius="25dp"
             app:cardElevation="8dp"
-            tools:ignore="MissingConstraints"
-            >
+            tools:ignore="MissingConstraints">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -45,8 +44,8 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:onClick="openMeal"
-                    android:src="@drawable/my_meal"
                     android:scaleType="centerCrop"
+                    android:src="@drawable/my_meal"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
@@ -55,8 +54,8 @@
                     android:text="@string/my_meal"
                     android:textAlignment="center"
                     android:textColor="@color/dark_green"
-                    android:textStyle="bold"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -95,8 +94,8 @@
                     android:text="@string/my_workout"
                     android:textAlignment="center"
                     android:textColor="@color/dark_green"
-                    android:textStyle="bold"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -104,20 +103,21 @@
             android:layout_width="155dp"
             android:layout_height="120dp"
             android:layout_row="1"
-            android:layout_column="0"
-            android:layout_gravity="fill"
             android:layout_rowWeight="1"
+            android:layout_column="0"
             android:layout_columnWeight="0"
+            android:layout_gravity="fill"
             android:layout_margin="8dp"
             app:cardCornerRadius="25dp"
             app:cardElevation="8dp"
-            tools:ignore="MissingConstraints" >
+            tools:ignore="MissingConstraints">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
                 tools:ignore="MissingConstraints">
 
                 <ImageView
@@ -134,28 +134,30 @@
                     android:text="@string/my_health"
                     android:textAlignment="center"
                     android:textColor="@color/dark_green"
-                    android:textStyle="bold"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:layout_width="155dp"
             android:layout_height="120dp"
             android:layout_row="1"
-            android:layout_column="1"
-            android:layout_gravity="fill"
             android:layout_rowWeight="1"
+            android:layout_column="1"
             android:layout_columnWeight="1"
+            android:layout_gravity="fill"
             android:layout_margin="8dp"
             app:cardCornerRadius="25dp"
             app:cardElevation="8dp"
-            tools:ignore="MissingConstraints" >
+            tools:ignore="MissingConstraints">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
                 android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
                 tools:ignore="MissingConstraints">
 
                 <ImageView
@@ -164,8 +166,7 @@
                     android:onClick="openRoutine"
                     android:scaleType="centerCrop"
                     android:src="@drawable/my_routine"
-                    tools:ignore="SpeakableTextPresentCheck"
-                    />
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -173,8 +174,8 @@
                     android:text="@string/my_routine"
                     android:textAlignment="center"
                     android:textColor="@color/dark_green"
-                    android:textStyle="bold"
-                    android:textSize="15dp"/>
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
@@ -191,5 +192,23 @@
         android:layout_alignParentBottom="true"
         app:itemIconTint="@color/white"
         tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/ic_user_profile"
+        android:onClick="openProfile"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@mipmap/ic_logout"
+        android:onClick="logOut"/>
 
 </RelativeLayout>

@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class RoutineActivity extends AppCompatActivity {
 
@@ -56,4 +57,5 @@ public class RoutineActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AddRoutineActivity.class);
         startActivity(intent);
     }
+
 }

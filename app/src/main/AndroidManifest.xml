@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TruePower">
         <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".AddRoutineActivity"
             android:exported="true"
             android:label="@string/add_routine" />
