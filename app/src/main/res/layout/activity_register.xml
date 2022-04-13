@@ -7,10 +7,10 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tv_start"
+        android:id="@+id/tv_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tv_start"
+        android:text="Register"
         android:textAlignment="center"
         android:textSize="50sp"
         android:textStyle="bold"

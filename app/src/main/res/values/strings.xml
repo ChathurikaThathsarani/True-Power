@@ -17,6 +17,13 @@
     <string name="status">Status</string>
     <string name="submit">Submit</string>
     <string name="add_route">Add your routine</string>
+    <string name="img_logo_name" />
+    <string name="img_innovation" />
+    <string name="img_team_name" />
+    <string name="tv_start">Start Page</string>
+    <string name="item_start">Start</string>
+    <string name="item_login">Login</string>
+    <string name="item_register">Register</string>
 
 
 </resources>
