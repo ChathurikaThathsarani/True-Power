@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TruePower">
         <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="true" />
+        <activity
             android:name=".AddRoutineActivity"
             android:exported="true"
             android:label="@string/add_routine" />
@@ -17,6 +23,9 @@
             android:name=".LoginActivity"
             android:exported="true"
             android:label="@string/login" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
         <activity
             android:name=".RoutineActivity"
             android:exported="true"
@@ -38,7 +47,7 @@
             android:exported="true"
             android:label="@string/home" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

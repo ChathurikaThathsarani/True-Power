@@ -8,9 +8,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -71,5 +73,16 @@ public class HomeActivity extends AppCompatActivity {
     public void openRoutine(View view) {
         Intent intent = new Intent(this, RoutineActivity.class);
         startActivity(intent);
+    }
+
+    public void openProfile(View view) {
+        Intent intent = new Intent(this, UserProfileActivity.class);
+        startActivity(intent);
+    }
+
+    public void logOut(View view) {
+        FirebaseAuth.getInstance().signOut();
+        Toast.makeText(HomeActivity.this,"Logout Successful",Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(HomeActivity.this,LoginActivity.class));
     }
 }
