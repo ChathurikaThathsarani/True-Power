@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RoutineActivity"
-    android:background="@drawable/wave">
+    android:background="@drawable/wave"
+    tools:context=".RoutineActivity">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemBackground="@color/dark_green"
-        app:menu="@menu/menu_navigation_home"
         android:layout_alignParentBottom="true"
+        app:itemBackground="@color/dark_green"
         app:itemIconTint="@color/white"
-        />
+        app:menu="@menu/menu_navigation_home" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -27,6 +26,12 @@
         app:srcCompat="@mipmap/ic_add"
         tools:ignore="SpeakableTextPresentCheck" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/routine_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="637dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp" />
 
 
 </RelativeLayout>

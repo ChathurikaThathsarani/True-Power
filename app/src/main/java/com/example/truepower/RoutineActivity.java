@@ -1,18 +1,22 @@
 package com.example.truepower;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
 
 public class RoutineActivity extends AppCompatActivity {
+    private RecyclerView recyclerview;
+    private DatabaseReference routine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +55,29 @@ public class RoutineActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+        recyclerview = findViewById(R.id.routine_recycler);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        linearLayoutManager.setStackFromEnd(true);
+        linearLayoutManager.setReverseLayout(true);
+        recyclerview.setHasFixedSize(true);
+        recyclerview.setLayoutManager(linearLayoutManager);
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+//        FirebaseRecylerOptions<Routine> options = new FirebaseRecyclerOptions.Builder<Routine>()
+//                .setQuery(routine,Routine.class)
+//                .build();
+    }
+
+//    public void RoutineViewHolder extends RecyclerView.ViewHolder{
+//        public RoutineViewHolder(View itemView){
+//            super(itemView);
+//        }
+//    }
 
     public void addRoutine(View view) {
         Intent intent = new Intent(this, AddRoutineActivity.class);
