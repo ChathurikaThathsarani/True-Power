@@ -5,18 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/wave"
-    tools:context=".AddRoutineActivity">
-
+    tools:context=".AddMealActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/img_meal_add_back_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:onClick="backToMyRoutine"
+        android:contentDescription="@string/blank"
+        android:onClick="backToMyMeal"
         app:srcCompat="@mipmap/ic_back"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tv_add_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/tv_add_meal"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,13 +45,42 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/background_edittext"
             android:ems="10"
-            android:hint="@string/routine_name"
+            android:hint="@string/et_meal_name"
+            android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:textAlignment="center"
+            tools:ignore="TextContrastCheck" />
+
+        <Spinner
+            android:id="@+id/spinner_meal_category"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_edittext"
+            android:prompt="@string/spinner_meal_category"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
             tools:ignore="SpeakableTextPresentCheck" />
 
+        <Spinner
+            android:id="@+id/spinner_meal_type"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_edittext"
+            android:prompt="@string/spinner_meal_type"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
         <EditText
-            android:id="@+id/editTextDate"
+            android:id="@+id/et_meal_calories"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -47,36 +88,12 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/background_edittext"
             android:ems="10"
-            android:hint="@string/day_to_complete"
-            android:inputType="date"
+            android:hint="@string/et_meal_calories"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
             android:minHeight="48dp"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <EditText
-            android:id="@+id/editTextTextMultiLine"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/background_edittext"
-            android:ems="10"
-            android:gravity="start|top"
-            android:hint="@string/description"
-            android:inputType="textMultiLine"
-            tools:ignore="SpeakableTextPresentCheck" />
-
-        <Spinner
-            android:id="@+id/spinner_status"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/background_edittext"
-            android:prompt="@string/status"
-            android:spinnerMode="dropdown"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:textAlignment="center"
+            tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
 
         <Button
             android:id="@+id/btn_meal_submit"
@@ -90,15 +107,5 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/add_route"
-        android:textColor="@color/white"
-        android:textSize="40sp"
-        android:textStyle="bold" />
 
 </RelativeLayout>

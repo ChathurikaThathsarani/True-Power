@@ -39,12 +39,14 @@ public class LoginActivity extends AppCompatActivity {
                     case R.id.item_start:
                         startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         overridePendingTransition(0, 0);
+                        finish();
                         return true;
                     case R.id.item_login:
                         return true;
                     case R.id.item_register:
                         startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
                         overridePendingTransition(0, 0);
+                        finish();
                         return true;
                 }
 

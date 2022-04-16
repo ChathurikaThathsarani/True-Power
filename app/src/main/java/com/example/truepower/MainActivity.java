@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -29,15 +30,26 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.item_login:
                         startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                         overridePendingTransition(0, 0);
+                        finish();
                         return true;
                     case R.id.item_register:
                         startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
                         overridePendingTransition(0, 0);
+                        finish();
                         return true;
                 }
 
                 return false;
             }
         });
+    }
+    public void openLogin(View view) {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
+
+    public void openRegister(View view) {
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
     }
 }

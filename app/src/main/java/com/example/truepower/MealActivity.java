@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -29,25 +30,33 @@ public class MealActivity extends AppCompatActivity {
                     case R.id.home:
                         startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                         overridePendingTransition(0, 0);
+                        finish();
                         return true;
                     case R.id.health:
                         startActivity(new Intent(getApplicationContext(), HealthActivity.class));
                         overridePendingTransition(0, 0);
+                        finish();
                         return true;
                     case R.id.meal:
                         return true;
                     case R.id.routine:
                         startActivity(new Intent(getApplicationContext(), RoutineActivity.class));
                         overridePendingTransition(0, 0);
+                        finish();
                         return true;
                     case R.id.workout:
                         startActivity(new Intent(getApplicationContext(), WorkoutActivity.class));
                         overridePendingTransition(0, 0);
+                        finish();
                         return true;
                 }
 
                 return false;
             }
         });
+    }
+    public void addMeal(View view) {
+        Intent intent = new Intent(this, AddMealActivity.class);
+        startActivity(intent);
     }
 }

@@ -26,10 +26,12 @@ public class RegisterActivity extends AppCompatActivity {
                     case R.id.item_start:
                         startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         overridePendingTransition(0, 0);
+                        finish();
                         return true;
                     case R.id.item_login:
                         startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                         overridePendingTransition(0, 0);
+                        finish();
                         return true;
                     case R.id.item_register:
                         return true;

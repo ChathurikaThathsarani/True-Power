@@ -4,17 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MealActivity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="132dp"
-        android:text="Meal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".MealActivity"
+    android:background="@drawable/wave">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_home"
@@ -25,5 +16,17 @@
         android:layout_alignParentBottom="true"
         app:itemIconTint="@color/white"
         />
+
+    <ImageView
+        android:id="@+id/img_meal_add_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="addMeal"
+        app:srcCompat="@mipmap/ic_add"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
 
 </RelativeLayout>
