@@ -106,6 +106,15 @@
             android:text="@string/submit" />
 
     </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/dark_green"
+        app:menu="@menu/menu_navigation_home"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/white"
+        />
 
 
 </RelativeLayout>
