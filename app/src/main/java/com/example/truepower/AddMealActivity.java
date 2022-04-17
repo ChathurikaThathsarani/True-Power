@@ -31,6 +31,7 @@ public class AddMealActivity extends AppCompatActivity implements AdapterView.On
 
         // Spinner Drop down elements
         List<String> mealCategories = new ArrayList<String>();
+        mealCategories.add("Meal Category");
         mealCategories.add("Main");
         mealCategories.add("Snack");
         mealCategories.add("Soup");
@@ -41,6 +42,7 @@ public class AddMealActivity extends AppCompatActivity implements AdapterView.On
         mealCategories.add("Other");
 
         List<String> mealTypes = new ArrayList<String>();
+        mealTypes.add("Meal Type");
         mealTypes.add("Breakfast");
         mealTypes.add("Lunch");
         mealTypes.add("Brunch");
