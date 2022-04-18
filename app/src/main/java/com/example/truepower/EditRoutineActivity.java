@@ -44,23 +44,23 @@ public class EditRoutineActivity extends AppCompatActivity {
         bundle = getIntent().getExtras();
         auth = FirebaseAuth.getInstance();
         routine=FirebaseDatabase.getInstance().getReference().child("routine").child(auth.getCurrentUser().getUid());
+        displayRoutineDetails();
 
-        displayMealDetails();
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                updateMealDetails();
+                updateRoutineDetails();
             }
         });
     }
-    private void displayMealDetails() {
+    private void displayRoutineDetails() {
         name.setText(bundle.getString("name"));
         date.setText(bundle.getString("date"));
         description.setText(bundle.getString("description"));
         status.setText(bundle.getString("status"));
     }
 
-    private void updateMealDetails() {
+    private void updateRoutineDetails() {
         final EditText name = findViewById(R.id.routine_name);
         final EditText date = findViewById(R.id.day_to_complete);
         final EditText description = findViewById(R.id.description);
