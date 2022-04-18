@@ -11,7 +11,8 @@
         android:theme="@style/Theme.TruePower">
         <activity
             android:name=".EditRoutineActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label=""/>
         <activity
             android:name=".RegisterActivity"
             android:exported="true" />
@@ -21,7 +22,7 @@
         <activity
             android:name=".AddRoutineActivity"
             android:exported="true"
-            android:label="@string/add_routine" />
+            android:label=""/>
         <activity
             android:name=".LoginActivity"
             android:exported="true"
@@ -32,7 +33,7 @@
         <activity
             android:name=".RoutineActivity"
             android:exported="true"
-            android:label="@string/my_routine" />
+            android:label="" />
         <activity
             android:name=".HealthActivity"
             android:exported="true"
