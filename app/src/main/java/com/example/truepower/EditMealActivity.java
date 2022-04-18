@@ -188,7 +188,7 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
 
 
 
-    public void backToMyRoutine(View view) {
+    public void backToMyMeal(View view) {
         Intent intent = new Intent(this, RoutineActivity.class);
         startActivity(intent);
     }

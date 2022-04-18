@@ -27,12 +27,11 @@ import com.google.firebase.database.FirebaseDatabase;
 public class RegisterActivity extends AppCompatActivity {
 
 
-    private EditText name;
+    private EditText uName;
     private EditText age;
     private EditText email;
     private EditText password;
     private Button signUp;
-    private DatabaseReference user;
     private FirebaseAuth auth;
 
     @Override
@@ -64,24 +63,18 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        name = findViewById(R.id.et_reg_name);
+        uName = findViewById(R.id.et_reg_name);
         age = findViewById(R.id.et_reg_age);
         email = findViewById(R.id.email_reg_email);
         password = findViewById(R.id.pw_reg_password);
         signUp = findViewById(R.id.btn_sign_up);
 
-        user= FirebaseDatabase.getInstance().getReference().child("user").child(auth.getCurrentUser().getUid());
         auth = FirebaseAuth.getInstance();
-
-        if(auth.getCurrentUser() != null){
-            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-            finish();
-        }
 
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String txt_name = name.getText().toString().trim();
+                String txt_name = uName.getText().toString().trim();
                 String txt_age = age.getText().toString().trim();
                 String txt_email = email.getText().toString().trim();
                 String txt_password = password.getText().toString().trim();
@@ -92,26 +85,26 @@ public class RegisterActivity extends AppCompatActivity {
                 if(txt_password.length()<6){
                     Toast.makeText(RegisterActivity.this, "Password Too Short !!!", Toast.LENGTH_SHORT).show();
                 }
-                    auth.createUserWithEmailAndPassword(txt_email,txt_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if(task.isSuccessful()){
-                                try {
-                                    Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-                                    Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
-                                    r.play();
-                                } catch (Exception e) {
-                                    e.printStackTrace();
-                                }
+                auth.createUserWithEmailAndPassword(txt_email,txt_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
+                            try {
+                                Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+                                Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
+                                r.play();
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
 
-                                Toast.makeText(RegisterActivity.this, "User Registration Successful", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-                            }
-                            else{
-                                Toast.makeText(RegisterActivity.this,"User Registration Failed", Toast.LENGTH_SHORT).show();
-                            }
+                            Toast.makeText(RegisterActivity.this, "User Registration Successful", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                         }
-                    });
+                        else{
+                            Toast.makeText(RegisterActivity.this,"User Registration Failed", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
 
             }
         });

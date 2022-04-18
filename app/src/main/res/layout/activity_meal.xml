@@ -7,15 +7,7 @@
     tools:context=".MealActivity"
     android:background="@drawable/wave">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:itemBackground="@color/dark_green"
-        app:menu="@menu/menu_navigation_home"
-        android:layout_alignParentBottom="true"
-        app:itemIconTint="@color/white"
-        />
+
 
     <ImageView
         android:id="@+id/img_meal_add_icon"
@@ -27,14 +19,36 @@
         app:srcCompat="@mipmap/ic_add"
         tools:ignore="SpeakableTextPresentCheck" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/meal_recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/img_meal_add_icon">
+    <TextView
+        android:id="@+id/view_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/view_meal"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"/>
 
-        </androidx.recyclerview.widget.RecyclerView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/meal_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="542dp"
+        android:layout_below="@id/img_meal_add_icon"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp">
 
+    </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/dark_green"
+        app:menu="@menu/menu_navigation_home"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/white"
+        />
 
 
 </RelativeLayout>

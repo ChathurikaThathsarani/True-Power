@@ -43,6 +43,8 @@
     <string name="spinner_meal_type">Meal Type</string>
     <string name="et_meal_calories">Calories</string>
     <string name="add_meal">Add Meal</string>
+    <string name="edit_meal">Edit Meal</string>
+    <string name="view_meal">View Meal</string>
     <string name="tv_meal_item_name">Meal Name : </string>
     <string name="tv_meal_item_category">Meal Category : </string>
     <string name="tv_meal_item_type">Meal Type : </string>
