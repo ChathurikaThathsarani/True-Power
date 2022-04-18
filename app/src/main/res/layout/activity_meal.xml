@@ -4,18 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MealActivity">
+    tools:context=".MealActivity"
+    android:background="@drawable/wave">
 
-    <TextView
-        android:id="@+id/textView"
+
+
+    <ImageView
+        android:id="@+id/img_meal_add_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="132dp"
-        android:text="Meal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="addMeal"
+        app:srcCompat="@mipmap/ic_add"
+        tools:ignore="SpeakableTextPresentCheck" />
 
+    <TextView
+        android:id="@+id/view_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/view_meal"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/meal_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="542dp"
+        android:layout_below="@id/img_meal_add_icon"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_home"
         android:layout_width="match_parent"
@@ -25,5 +49,6 @@
         android:layout_alignParentBottom="true"
         app:itemIconTint="@color/white"
         />
+
 
 </RelativeLayout>

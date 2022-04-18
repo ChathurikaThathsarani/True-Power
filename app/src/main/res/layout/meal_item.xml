@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="6dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginBottom="20dp"
+    android:scrollbars="vertical"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_meal_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/plate"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/tv_meal_item_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/img_meal_icon"
+            android:text="@string/tv_meal_item_name"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_meal_item_name_ans_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_toEndOf="@id/tv_meal_item_name_txt"
+            android:text="@string/txt"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_meal_item_category_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_meal_item_category"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/img_meal_icon"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/tv_meal_item_name_txt"/>
+
+        <TextView
+            android:id="@+id/tv_meal_item_category_ans_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_meal_item_name_txt"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/tv_meal_item_category_txt"
+            android:text="@string/txt"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_meal_item_type_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_meal_item_type"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/img_meal_icon"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/tv_meal_item_category_txt"/>
+
+        <TextView
+            android:id="@+id/tv_meal_item_type_ans_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_meal_item_category_txt"
+            android:layout_marginStart="33dp"
+            android:layout_toEndOf="@id/tv_meal_item_type_txt"
+            android:text="@string/txt"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_meal_item_calories_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_meal_item_calories"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/img_meal_icon"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/tv_meal_item_type_txt"/>
+        <TextView
+            android:id="@+id/tv_meal_item_calories_ans_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_meal_item_type_txt"
+            android:layout_marginStart="47.5dp"
+            android:layout_toEndOf="@id/tv_meal_item_calories_txt"
+            android:text="@string/txt"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_meal_item_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_meal_item_calories_ans_txt"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_meal_item_edit"
+            android:textSize="15sp"
+            android:background="@drawable/round_border"/>
+
+        <Button
+            android:id="@+id/btn_meal_item_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/btn_meal_item_edit"
+            android:layout_below="@id/tv_meal_item_calories_ans_txt"
+            android:text="@string/btn_meal_item_delete"
+            android:textSize="15sp"
+            android:background="@drawable/round_border"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

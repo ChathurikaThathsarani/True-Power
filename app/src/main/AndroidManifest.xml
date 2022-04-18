@@ -2,20 +2,31 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.truepower">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TruePower">
+        <activity
+            android:name=".EditMealActivity"
+            android:exported="true"
+            android:label="@string/edit_meal"/>
+        <activity
+            android:name=".AddMealActivity"
+            android:exported="true"
+            android:label="@string/add_meal" />
         <activity
             android:name=".EditRoutineActivity"
             android:exported="true"
             android:label=""/>
         <activity
             android:name=".RegisterActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="@string/sign_up" />
         <activity
             android:name=".UserProfileActivity"
             android:exported="true" />
