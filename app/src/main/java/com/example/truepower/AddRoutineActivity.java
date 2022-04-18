@@ -93,6 +93,8 @@ private FirebaseAuth auth;
                 public void onComplete(@NonNull Task<Void> task) {
                     if(task.isSuccessful()){
                         Toast.makeText(AddRoutineActivity.this,"Routine added successfully",Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(AddRoutineActivity.this, RoutineActivity.class);
+                        startActivity(intent);
                     }else{
                         Toast.makeText(AddRoutineActivity.this,"Error",Toast.LENGTH_SHORT).show();
                     }

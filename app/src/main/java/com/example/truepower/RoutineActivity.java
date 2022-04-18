@@ -12,11 +12,21 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class RoutineActivity extends AppCompatActivity {
-    private RecyclerView recyclerview;
+    private RecyclerView recyclerView;
     private DatabaseReference routine;
+    RoutineAdapter adapter;
+    private FirebaseAuth auth;
+    private String obid="";
+    private String name="";
+    private String date="";
+    private String description="";
+    private String status="";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,33 +65,40 @@ public class RoutineActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-        recyclerview = findViewById(R.id.routine_recycler);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        linearLayoutManager.setStackFromEnd(true);
-        linearLayoutManager.setReverseLayout(true);
-        recyclerview.setHasFixedSize(true);
-        recyclerview.setLayoutManager(linearLayoutManager);
+        auth=FirebaseAuth.getInstance();
+        routine = FirebaseDatabase.getInstance().getReference().child("routine").child(auth.getCurrentUser().getUid());
+        recyclerView = findViewById(R.id.routine_recycler);
+        recyclerView.setLayoutManager(
+                new LinearLayoutManager(this));
+        FirebaseRecyclerOptions<Routine> options
+                = new FirebaseRecyclerOptions.Builder<Routine>()
+                .setQuery(routine, Routine.class)
+                .build();
+        adapter = new RoutineAdapter(options);
+        recyclerView.setAdapter(adapter);
     }
 
-    @Override
-    protected void onStart() {
+
+    @Override protected void onStart()
+    {
         super.onStart();
-
-//        FirebaseRecylerOptions<Routine> options = new FirebaseRecyclerOptions.Builder<Routine>()
-//                .setQuery(routine,Routine.class)
-//                .build();
+        adapter.startListening();
     }
 
-//    public void RoutineViewHolder extends RecyclerView.ViewHolder{
-//        public RoutineViewHolder(View itemView){
-//            super(itemView);
-//        }
-//    }
+    // Function to tell the app to stop getting
+    // data from database on stopping of the activity
+    @Override protected void onStop()
+    {
+        super.onStop();
+        adapter.stopListening();
+    }
+
 
     public void addRoutine(View view) {
         Intent intent = new Intent(this, AddRoutineActivity.class);
         startActivity(intent);
     }
+
+
 
 }

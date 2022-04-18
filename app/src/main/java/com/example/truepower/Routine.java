@@ -1,10 +1,20 @@
 package com.example.truepower;
+import java.io.Serializable;
 
-public class Routine {
-    String id,name,description,status,date;
+
+public class Routine implements Serializable {
+    String id,name,description,status,date,obId;
 
     public Routine(){
 
+    }
+
+    public String getObId() {
+        return obId;
+    }
+
+    public void setObId(String obId) {
+        this.obId = obId;
     }
 
     public Routine(String id, String name, String description, String status, String date) {
