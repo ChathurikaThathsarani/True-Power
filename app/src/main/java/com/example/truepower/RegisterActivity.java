@@ -4,6 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Ringtone;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.MenuItem;
@@ -18,15 +21,18 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthActionCodeException;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterActivity extends AppCompatActivity {
+
 
     private EditText name;
     private EditText age;
     private EditText email;
     private EditText password;
     private Button signUp;
+    private DatabaseReference user;
     private FirebaseAuth auth;
 
     @Override
@@ -64,6 +70,7 @@ public class RegisterActivity extends AppCompatActivity {
         password = findViewById(R.id.pw_reg_password);
         signUp = findViewById(R.id.btn_sign_up);
 
+        user= FirebaseDatabase.getInstance().getReference().child("user").child(auth.getCurrentUser().getUid());
         auth = FirebaseAuth.getInstance();
 
         if(auth.getCurrentUser() != null){
@@ -89,6 +96,14 @@ public class RegisterActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
+                                try {
+                                    Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+                                    Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
+                                    r.play();
+                                } catch (Exception e) {
+                                    e.printStackTrace();
+                                }
+
                                 Toast.makeText(RegisterActivity.this, "User Registration Successful", Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                             }

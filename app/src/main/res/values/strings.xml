@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">True Power</string>
     <string name="home">Home</string>
+    <string name="txt">TextView</string>
     <string name="my_meal">My Meal</string>
     <string name="my_workout">My Workout</string>
     <string name="my_health">My Health</string>
@@ -36,11 +37,18 @@
     <string name="pw_reg_password">Password</string>
     <string name="btn_sign_up">Sign Up</string>
     <string name="tv_add_meal">Add your meal</string>
+    <string name="tv_edit_meal">Edit your meal</string>
     <string name="et_meal_name">Meal Name</string>
     <string name="spinner_meal_category">Category</string>
     <string name="spinner_meal_type">Meal Type</string>
     <string name="et_meal_calories">Calories</string>
     <string name="add_meal">Add Meal</string>
+    <string name="tv_meal_item_name">Meal Name : </string>
+    <string name="tv_meal_item_category">Meal Category : </string>
+    <string name="tv_meal_item_type">Meal Type : </string>
+    <string name="tv_meal_item_calories">Calories : </string>
+    <string name="btn_meal_item_edit">Edit</string>
+    <string name="btn_meal_item_delete">Delete</string>
 
 
 </resources>

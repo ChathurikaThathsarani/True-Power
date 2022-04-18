@@ -27,6 +27,14 @@
         app:srcCompat="@mipmap/ic_add"
         tools:ignore="SpeakableTextPresentCheck" />
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/meal_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/img_meal_add_icon">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
 
 
 </RelativeLayout>
