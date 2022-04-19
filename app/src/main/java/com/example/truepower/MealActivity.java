@@ -83,6 +83,11 @@ public class MealActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AddMealActivity.class);
         startActivity(intent);
     }
+
+    public void goToEnergyCalculator(View view){
+        Intent intent = new Intent(this, EnergyCalculatorActivity.class);
+        startActivity(intent);
+    }
     @Override protected void onStart()
     {
         super.onStart();

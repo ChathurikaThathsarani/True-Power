@@ -45,12 +45,21 @@
     <string name="add_meal">Add Meal</string>
     <string name="edit_meal">Edit Meal</string>
     <string name="view_meal">View Meal</string>
+    <string name="btn_calculate_energy">Energy Calculator</string>
     <string name="tv_meal_item_name">Meal Name : </string>
     <string name="tv_meal_item_category">Meal Category : </string>
     <string name="tv_meal_item_type">Meal Type : </string>
     <string name="tv_meal_item_calories">Calories : </string>
     <string name="btn_meal_item_edit">Edit</string>
     <string name="btn_meal_item_delete">Delete</string>
+    <string name="energy_calculator">Energy Calculator</string>
+    <string name="tv_energy_calculator">Calculate Energy</string>
+    <string name="et_enter_calories">Enter The Number Of Calories</string>
+    <string name="btn_energy_calc">Calculate</string>
+    <string name="tv_convert_to">Calculate To …</string>
+    <string name="tv_energy_answer_txt">Answer Is …</string>
+    <string name="rd_btn_kj">Kilo Joules</string>
+    <string name="rd_btn_j">Joules</string>
 
 
 </resources>

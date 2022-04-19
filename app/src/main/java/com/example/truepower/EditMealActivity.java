@@ -25,6 +25,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,9 +38,10 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
     private Spinner mealType;
     private Button submit;
     private Bundle bundle;
-
     private FirebaseAuth auth;
     private DatabaseReference meal;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,16 +49,16 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
         setContentView(R.layout.activity_edit_meal);
 
         mealName = findViewById(R.id.et_meal_name);
+
         calories = findViewById(R.id.et_meal_calories);
         submit = findViewById(R.id.btn_meal_submit);
         bundle = getIntent().getExtras();
         auth = FirebaseAuth.getInstance();
         meal = FirebaseDatabase.getInstance().getReference().child("meal").child(auth.getCurrentUser().getUid());
-
-        final Spinner mealCat = (Spinner) findViewById(R.id.spinner_meal_category);
+        mealCategory = (Spinner) findViewById(R.id.spinner_meal_category);
         final Spinner mealType = (Spinner) findViewById(R.id.spinner_meal_type);
 
-        mealCat.setOnItemSelectedListener(this);
+        mealCategory.setOnItemSelectedListener(this);
         mealType.setOnItemSelectedListener(this);
 
         // Spinner Drop down elements
@@ -85,7 +87,7 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
 
         // Drop down layout style - list view with radio button
         mealCatDataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        mealCat.setAdapter(mealCatDataAdapter);
+        mealCategory.setAdapter(mealCatDataAdapter);
 
         mealTypeDataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mealType.setAdapter(mealTypeDataAdapter);
@@ -117,6 +119,8 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
                         finish();
                         return true;
                     case R.id.meal:
+                        startActivity(new Intent(getApplicationContext(), MealActivity.class));
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.routine:
                         startActivity(new Intent(getApplicationContext(), RoutineActivity.class));
@@ -136,8 +140,9 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
     }
     private void displayMealDetails() {
         mealName.setText(bundle.getString("mealName"));
-
         calories.setText(bundle.getString("calories"));
+
+
     }
 
     private void updateMealDetails() {
@@ -189,7 +194,7 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
 
 
     public void backToMyMeal(View view) {
-        Intent intent = new Intent(this, RoutineActivity.class);
+        Intent intent = new Intent(this, MealActivity.class);
         startActivity(intent);
     }
 

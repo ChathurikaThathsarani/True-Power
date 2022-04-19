@@ -99,7 +99,6 @@ public class AddMealActivity extends AppCompatActivity implements AdapterView.On
                     case R.id.meal:
                         startActivity(new Intent(getApplicationContext(), MealActivity.class));
                         overridePendingTransition(0, 0);
-                        finish();
                         return true;
                     case R.id.routine:
                         startActivity(new Intent(getApplicationContext(), RoutineActivity.class));
