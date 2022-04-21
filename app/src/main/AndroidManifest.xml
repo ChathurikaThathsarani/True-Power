@@ -16,6 +16,10 @@
             android:exported="true"
             android:label="@string/energy_calculator"/>
         <activity
+            android:name=".BMRCalculatorActivity"
+            android:exported="true"
+            android:label="" />
+        <activity
             android:name=".EditMealActivity"
             android:exported="true"
             android:label="@string/edit_meal" />
