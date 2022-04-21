@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -31,6 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText age;
     private EditText email;
     private EditText password;
+    private ProgressBar progressBar;
     private Button signUp;
     private FirebaseAuth auth;
 
@@ -68,6 +70,7 @@ public class RegisterActivity extends AppCompatActivity {
         email = findViewById(R.id.email_reg_email);
         password = findViewById(R.id.pw_reg_password);
         signUp = findViewById(R.id.btn_sign_up);
+        progressBar = findViewById(R.id.prg_reg_loading);
 
         auth = FirebaseAuth.getInstance();
 
@@ -85,6 +88,8 @@ public class RegisterActivity extends AppCompatActivity {
                 if(txt_password.length()<6){
                     Toast.makeText(RegisterActivity.this, "Password Too Short !!!", Toast.LENGTH_SHORT).show();
                 }
+
+                progressBar.setVisibility(View.VISIBLE);
                 auth.createUserWithEmailAndPassword(txt_email,txt_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -96,9 +101,10 @@ public class RegisterActivity extends AppCompatActivity {
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
-
+                            progressBar.setVisibility(View.GONE);
                             Toast.makeText(RegisterActivity.this, "User Registration Successful", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                            finish();
                         }
                         else{
                             Toast.makeText(RegisterActivity.this,"User Registration Failed", Toast.LENGTH_SHORT).show();
