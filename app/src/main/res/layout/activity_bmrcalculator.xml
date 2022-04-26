@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wave"
+    tools:context=".BMRCalculatorActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="368dp"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_edittext"
+            android:ems="10"
+            android:hint="Weight in kilograms"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_edittext"
+            android:ems="10"
+            android:hint="Height in centi meters"
+            android:inputType="number"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_edittext"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Age"
+            android:inputType="number"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Spinner
+            android:id="@+id/spinner_gender"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_edittext"
+            android:prompt="@string/status"
+            android:spinnerMode="dropdown"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_border"
+            android:text="@string/submit" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:text="BMR Calculator"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_screen"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/img_logo_name"
+        android:layout_width="275dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="41dp"
+        android:contentDescription="@string/img_logo_name"
+        app:srcCompat="@drawable/true_power_logo" />
+
+    <ImageView
+        android:id="@+id/img_innovation"
+        android:layout_width="289dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="93dp"
+        android:contentDescription="@string/img_innovation"
+        app:srcCompat="@drawable/innovation_by" />
+
+    <ImageView
+        android:id="@+id/img_team_name"
+        android:layout_width="290dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="59dp"
+        android:contentDescription="@string/img_team_name"
+        app:srcCompat="@drawable/cypher_masterz" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="145dp" />
+
+</RelativeLayout>
