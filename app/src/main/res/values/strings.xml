@@ -18,6 +18,10 @@
     <string name="status">Status</string>
     <string name="submit">Submit</string>
     <string name="add_route">Add your routine</string>
+    <string name="tv_alarm_no">No Alarm set</string>
+    <string name="tv_alarm_set">Set Alarm</string>
+    <string name="tv_alarm_cancel">Cancel alarm</string>
+    <string name="tv_alarm_title">Set Your Alarm</string>
     <string name="img_logo_name" />
     <string name="img_innovation" />
     <string name="img_team_name" />

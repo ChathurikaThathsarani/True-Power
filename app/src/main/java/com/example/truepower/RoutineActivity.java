@@ -104,5 +104,8 @@ public class RoutineActivity extends AppCompatActivity {
     }
 
 
-
+    public void openAlarm(View view) {
+        Intent intent = new Intent(this, AlarmNotification.class);
+        startActivity(intent);
+    }
 }
