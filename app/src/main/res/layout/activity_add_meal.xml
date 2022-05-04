@@ -100,21 +100,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/round_border"
             android:text="@string/submit" />
 
     </LinearLayout>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:itemBackground="@color/dark_green"
-        app:menu="@menu/menu_navigation_home"
-        android:layout_alignParentBottom="true"
-        app:itemIconTint="@color/white"
-        />
 
 
 </RelativeLayout>
