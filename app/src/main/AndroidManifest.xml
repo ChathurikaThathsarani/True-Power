@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.truepower" >
+    package="com.example.truepower">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,11 +10,28 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TruePower" >
+        android:theme="@style/Theme.TruePower">
+
+        <activity
+            android:name=".CountdownTimer"
+            android:exported="true"
+            android:label="@string/countdown_timer"/>
+        <activity
+            android:name=".BMICalculator"
+            android:exported="true"
+            android:label="@string/bmi_topic"/>
+        <activity
+            android:name=".EditWorkoutActivity"
+            android:exported="true"
+            android:label="@string/edit_workout_topic"/>
+        <activity
+            android:name=".AddWorkout"
+            android:exported="true"
+            android:label="@string/add_workout_topic"/>
         <activity
             android:name=".EnergyCalculatorActivity"
             android:exported="true"
-            android:label="@string/energy_calculator"/>
+            android:label="@string/energy_calculator" />
         <activity
             android:name=".EditMealActivity"
             android:exported="true"
@@ -67,7 +84,7 @@
             android:label="@string/home" />
         <activity
             android:name=".SplashScreen"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
