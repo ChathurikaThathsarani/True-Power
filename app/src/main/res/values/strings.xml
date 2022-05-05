@@ -18,6 +18,10 @@
     <string name="status">Status</string>
     <string name="submit">Submit</string>
     <string name="add_route">Add your routine</string>
+    <string name="tv_login_title">Welcome Back ...</string>
+    <string name="et_login_email">Email</string>
+    <string name="et_login_password">Password</string>
+    <string name="btn_login">Login</string>
     <string name="tv_alarm_no">No Alarm set</string>
     <string name="tv_alarm_set">Set Alarm</string>
     <string name="tv_alarm_cancel">Cancel alarm</string>
