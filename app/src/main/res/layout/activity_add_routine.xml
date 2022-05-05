@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/img_back_to_my_routine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -33,9 +33,11 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/background_edittext"
             android:ems="10"
-            android:hint="@string/routine_name"
+            android:hint="@string/et_add_routine_name"
             android:inputType="textPersonName"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:importantForAutofill="no"
+            tools:ignore="SpeakableTextPresentCheck|TextContrastCheck"/>
 
         <EditText
             android:id="@+id/day_to_complete"
@@ -46,10 +48,11 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/background_edittext"
             android:ems="10"
-            android:hint="@string/day_to_complete"
+            android:hint="@string/et_add_routine_date"
             android:inputType="date"
             android:minHeight="48dp"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:importantForAutofill="no"
+            tools:ignore="SpeakableTextPresentCheck|TextContrastCheck" />
 
         <EditText
             android:id="@+id/description"
@@ -61,9 +64,11 @@
             android:background="@drawable/background_edittext"
             android:ems="10"
             android:gravity="start|top"
-            android:hint="@string/description"
+            android:hint="@string/et_add_routine_description"
             android:inputType="textMultiLine"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:importantForAutofill="no"
+            tools:ignore="SpeakableTextPresentCheck|TextContrastCheck"
+            />
 
         <Spinner
             android:id="@+id/spinner_status"
@@ -73,7 +78,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/background_edittext"
-            android:prompt="@string/status"
+            android:prompt="@string/et_add_routine_status"
             android:spinnerMode="dropdown"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -85,17 +90,17 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/round_border"
-            android:text="@string/submit" />
+            android:text="@string/btn_add_routine" />
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_add_routine_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="80dp"
         android:layout_marginTop="20dp"
-        android:text="@string/add_route"
+        android:text="@string/tv_add_routine_title"
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="italic" />
