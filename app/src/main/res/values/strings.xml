@@ -43,6 +43,14 @@
     <string name="et_edit_routine_description">Description</string>
     <string name="et_edit_routine_status">Status</string>
     <string name="btn_edit_routine">Submit</string>
+    <string name="tv_bmr_calculator_label">BMR Calculator</string>
+    <string name="tv_bmr_calculator_title">Calculate BMR</string>
+    <string name="et_bmr_weight">Weight in kilograms</string>
+    <string name="et_bmr_height">Height in centi meters</string>
+    <string name="et_bmr_age">Age</string>
+    <string name="et_bmr_status">Status</string>
+    <string name="et_bmr_answer"></string>
+    <string name="btn_bmr_submit">Submit</string>
     <string name="tv_alarm_notification_label">Alarm Notification</string>
     <string name="tv_alarm_no">No Alarm set</string>
     <string name="btn_alarm_set">Set Alarm</string>
