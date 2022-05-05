@@ -121,7 +121,6 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
         String m_calories = calories.getText().toString();
         String id = bundle.getString("id");
 
-
         // validations
         if(TextUtils.isEmpty(m_name)){
             mealName.setError("Meal name is required !");
@@ -143,7 +142,6 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
         if(TextUtils.isEmpty(m_calories)){
             calories.setError("Calorie count is required !");
         }
-
 
         Meal updateMeal = new Meal(id,m_name,m_category,m_type,m_calories);
         meal.child(id).setValue(updateMeal).addOnCompleteListener(new OnCompleteListener<Void>() {

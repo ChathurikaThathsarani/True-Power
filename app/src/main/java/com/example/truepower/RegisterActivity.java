@@ -27,7 +27,6 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterActivity extends AppCompatActivity {
 
-
     private EditText uName;
     private EditText age;
     private EditText email;
@@ -60,7 +59,6 @@ public class RegisterActivity extends AppCompatActivity {
                     case R.id.item_register:
                         return true;
                 }
-
                 return false;
             }
         });
@@ -71,9 +69,7 @@ public class RegisterActivity extends AppCompatActivity {
         password = findViewById(R.id.pw_reg_password);
         signUp = findViewById(R.id.btn_sign_up);
         progressBar = findViewById(R.id.prg_reg_loading);
-
         auth = FirebaseAuth.getInstance();
-
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,7 +84,6 @@ public class RegisterActivity extends AppCompatActivity {
                 if(txt_password.length()<6){
                     Toast.makeText(RegisterActivity.this, "Password Too Short !!!", Toast.LENGTH_SHORT).show();
                 }
-
                 progressBar.setVisibility(View.VISIBLE);
                 auth.createUserWithEmailAndPassword(txt_email,txt_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
@@ -111,10 +106,7 @@ public class RegisterActivity extends AppCompatActivity {
                         }
                     }
                 });
-
             }
         });
     }
-
-
 }
