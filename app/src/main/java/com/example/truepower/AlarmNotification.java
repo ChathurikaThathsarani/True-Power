@@ -24,7 +24,7 @@ public class AlarmNotification extends AppCompatActivity implements TimePickerDi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm_notification);
 
-        mTextView = findViewById(R.id.textView);
+        mTextView = findViewById(R.id.tv_no_alarm_set);
 
         Button buttonTimePicker = findViewById(R.id.button_timepicker);
         buttonTimePicker.setOnClickListener(new View.OnClickListener() {

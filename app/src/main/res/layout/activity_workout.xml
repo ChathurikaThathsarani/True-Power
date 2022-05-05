@@ -4,17 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wave"
     tools:context=".WorkoutActivity">
 
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/view_workout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="132dp"
-        android:text="Workout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/view_workout"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="italic" />
+    <ImageView
+        android:id="@+id/img_workout_add_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/blank"
+        android:onClick="addWorkout"
+        app:srcCompat="@mipmap/ic_add"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/workout_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="637dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp" />
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_home"
@@ -26,4 +48,12 @@
         app:itemIconTint="@color/white"
         />
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="70dp"
+        android:onClick="openTimer"
+        app:srcCompat="@mipmap/ic_timers2" />
 </RelativeLayout>
