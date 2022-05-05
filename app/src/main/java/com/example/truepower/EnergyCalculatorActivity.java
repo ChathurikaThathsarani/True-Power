@@ -35,45 +35,6 @@ public class EnergyCalculatorActivity extends AppCompatActivity {
         btn_energy_calc = findViewById(R.id.btn_energy_calc);
         tv_energy_answer = findViewById(R.id.tv_energy_answer);
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_home);
-        bottomNavigationView.setSelectedItemId(R.id.meal);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.home:
-                        startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-                        overridePendingTransition(0, 0);
-                        finish();
-                        return true;
-                    case R.id.health:
-                        startActivity(new Intent(getApplicationContext(), HealthActivity.class));
-                        overridePendingTransition(0, 0);
-                        finish();
-                        return true;
-                    case R.id.meal:
-                        startActivity(new Intent(getApplicationContext(), MealActivity.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.routine:
-                        startActivity(new Intent(getApplicationContext(), RoutineActivity.class));
-                        overridePendingTransition(0, 0);
-                        finish();
-                        return true;
-                    case R.id.workout:
-                        startActivity(new Intent(getApplicationContext(), WorkoutActivity.class));
-                        overridePendingTransition(0, 0);
-                        finish();
-                        return true;
-                }
-
-                return false;
-            }
-        });
-
     }
     @Override
     protected void onResume() {
