@@ -154,6 +154,7 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
                     Toast.makeText(EditMealActivity.this, "Meal Updated", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(EditMealActivity.this, MealActivity.class);
                     startActivity(intent);
+                    finish();
 
                 } else {
 

@@ -134,13 +134,6 @@ public class AddMealActivity extends AppCompatActivity implements AdapterView.On
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
                     if(task.isSuccessful()){
-                        try {
-                            Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-                            Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
-                            r.play();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
                         Toast.makeText(AddMealActivity.this,"Meal added successfully",Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(AddMealActivity.this,MealActivity.class);
                         startActivity(intent);
