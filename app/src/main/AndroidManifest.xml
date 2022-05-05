@@ -58,7 +58,7 @@
         <activity
             android:name=".RoutineActivity"
             android:exported="true"
-            android:label="" />
+            android:label="@string/my_routine" />
         <activity
             android:name=".HealthActivity"
             android:exported="true"
