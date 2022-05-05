@@ -22,6 +22,13 @@
     <string name="et_login_email">Email</string>
     <string name="et_login_password">Password</string>
     <string name="btn_login">Login</string>
+    <string name="tv_view_routine_title">View Routine</string>
+    <string name="btn_view_routine_edit">EDIT</string>
+    <string name="btn_view_routine_delete">DELETE</string>
+    <string name="tv_view_routine_name">Name</string>
+    <string name="tv_view_routine_date">Date</string>
+    <string name="tv_view_routine_status">Status</string>
+    <string name="tv_view_routine_description">Description</string>
     <string name="tv_alarm_no">No Alarm set</string>
     <string name="tv_alarm_set">Set Alarm</string>
     <string name="tv_alarm_cancel">Cancel alarm</string>
