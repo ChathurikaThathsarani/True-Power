@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -11,6 +13,7 @@
         android:roundIcon="@drawable/logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TruePower">
+
 
         <activity
             android:name=".CountdownTimer"
@@ -28,11 +31,22 @@
             android:name=".AddWorkout"
             android:exported="true"
             android:label="@string/add_workout_topic"/>
+
+        <activity
+            android:name=".AlarmNotification"
+            android:exported="true"
+            android:label="@string/tv_alarm_notification_label" />
         <activity
             android:name=".EnergyCalculatorActivity"
             android:exported="true"
             android:label="@string/energy_calculator" />
+
+
         <activity
+            android:name=".BMRCalculatorActivity"
+            android:exported="true"
+            android:label="@string/tv_bmr_calculator_label" />
+       <activity
             android:name=".EditMealActivity"
             android:exported="true"
             android:label="@string/edit_meal" />
@@ -43,7 +57,7 @@
         <activity
             android:name=".EditRoutineActivity"
             android:exported="true"
-            android:label="" />
+            android:label="@string/tv_edit_routine_label" />
         <activity
             android:name=".RegisterActivity"
             android:exported="true"
@@ -54,7 +68,7 @@
         <activity
             android:name=".AddRoutineActivity"
             android:exported="true"
-            android:label="" />
+            android:label="@string/tv_add_routine_label" />
         <activity
             android:name=".LoginActivity"
             android:exported="true"
@@ -65,7 +79,7 @@
         <activity
             android:name=".RoutineActivity"
             android:exported="true"
-            android:label="" />
+            android:label="@string/my_routine" />
         <activity
             android:name=".HealthActivity"
             android:exported="true"
@@ -91,6 +105,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <receiver android:name=".AlertReceiver" />
     </application>
 
 </manifest>

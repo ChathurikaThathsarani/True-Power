@@ -3,7 +3,9 @@ package com.example.truepower;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -17,6 +19,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -99,52 +102,13 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
                 updateMealDetails();
             }
         });
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_home);
-        bottomNavigationView.setSelectedItemId(R.id.meal);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.home:
-                        startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-                        overridePendingTransition(0, 0);
-                        finish();
-                        return true;
-                    case R.id.health:
-                        startActivity(new Intent(getApplicationContext(), HealthActivity.class));
-                        overridePendingTransition(0, 0);
-                        finish();
-                        return true;
-                    case R.id.meal:
-                        startActivity(new Intent(getApplicationContext(), MealActivity.class));
-                        overridePendingTransition(0, 0);
-                        return true;
-                    case R.id.routine:
-                        startActivity(new Intent(getApplicationContext(), RoutineActivity.class));
-                        overridePendingTransition(0, 0);
-                        finish();
-                        return true;
-                    case R.id.workout:
-                        startActivity(new Intent(getApplicationContext(), WorkoutActivity.class));
-                        overridePendingTransition(0, 0);
-                        finish();
-                        return true;
-                }
-
-                return false;
-            }
-        });
     }
     private void displayMealDetails() {
         mealName.setText(bundle.getString("mealName"));
         calories.setText(bundle.getString("calories"));
-
-
     }
 
+    @SuppressLint("SetTextI18n")
     private void updateMealDetails() {
         final EditText mealName = findViewById(R.id.et_meal_name);
         final Spinner mealCategory =  findViewById(R.id.spinner_meal_category);
@@ -163,13 +127,21 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
             mealName.setError("Meal name is required !");
         }
         if(m_category.equals("Meal Category")){
-            Toast.makeText(EditMealActivity.this,"Select a valid Meal Category",Toast.LENGTH_SHORT).show();
+            TextView errorText = (TextView)mealCategory.getSelectedView();
+            errorText.setTextColor(Color.RED);
+            errorText.setText("Enter Meal Category");
+            errorText.setError("Enter Meal Category");
+            return;
         }
         if(m_type.equals("Meal Type")){
-            Toast.makeText(EditMealActivity.this,"Select a valid Meal Type",Toast.LENGTH_SHORT).show();
+            TextView errorText = (TextView)mealType.getSelectedView();
+            errorText.setTextColor(Color.RED);
+            errorText.setText("Enter Meal Type");
+            errorText.setError("Enter Meal Type");
+            return;
         }
         if(TextUtils.isEmpty(m_calories)){
-            mealName.setError("Calorie count is required !");
+            calories.setError("Calorie count is required !");
         }
 
 
@@ -182,6 +154,7 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
                     Toast.makeText(EditMealActivity.this, "Meal Updated", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(EditMealActivity.this, MealActivity.class);
                     startActivity(intent);
+                    finish();
 
                 } else {
 
