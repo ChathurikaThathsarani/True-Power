@@ -8,7 +8,7 @@
     android:background="@drawable/wave">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/img_back_to_my_routine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -18,7 +18,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_no_alarm_set"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/button_timepicker"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:background="@drawable/round_border"
-        android:text="@string/tv_alarm_set" />
+        android:text="@string/btn_alarm_set" />
 
     <Button
         android:id="@+id/button_cancel"
@@ -43,10 +43,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="27dp"
         android:background="@drawable/round_border"
-        android:text="@string/tv_alarm_cancel" />
+        android:text="@string/btn_alarm_cancel" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_set_alarm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"

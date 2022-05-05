@@ -16,7 +16,7 @@
         <activity
             android:name=".AlarmNotification"
             android:exported="true"
-            android:label="" />
+            android:label="@string/tv_alarm_notification_label" />
         <activity
             android:name=".EnergyCalculatorActivity"
             android:exported="true"
