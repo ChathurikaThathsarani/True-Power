@@ -24,7 +24,7 @@
         <activity
             android:name=".BMRCalculatorActivity"
             android:exported="true"
-            android:label="" />
+            android:label="@string/tv_bmr_calculator_label" />
         <activity
             android:name=".EditMealActivity"
             android:exported="true"
