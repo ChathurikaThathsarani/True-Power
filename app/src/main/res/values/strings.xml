@@ -49,6 +49,11 @@
     <string name="et_bmr_height">Height in centi meters</string>
     <string name="et_bmr_age">Age</string>
     <string name="et_bmr_status">Status</string>
+    <string name="btn_music">Music Player</string>
+    <string name="tv_music">Music Player</string>
+    <string name="btn_play">Play</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_stop">Stop</string>
     <string name="et_bmr_answer"></string>
     <string name="btn_bmr_submit">Submit</string>
     <string name="tv_alarm_notification_label">Alarm Notification</string>

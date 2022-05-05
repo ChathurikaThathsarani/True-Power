@@ -80,6 +80,11 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openMusic(View view) {
+        Intent intent = new Intent(this, MusicActivity.class);
+        startActivity(intent);
+    }
+
     public void logOut(View view) {
         FirebaseAuth.getInstance().signOut();
         Toast.makeText(HomeActivity.this,"Logout Successful",Toast.LENGTH_SHORT).show();

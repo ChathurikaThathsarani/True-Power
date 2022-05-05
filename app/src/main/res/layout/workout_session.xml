@@ -76,7 +76,7 @@
             android:id="@+id/imageView3"
             android:layout_width="118dp"
             android:layout_height="166dp"
-            app:srcCompat="@drawable/workouticon"
+            app:srcCompat="@drawable/workout_icon"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="12dp"
             tools:layout_editor_absoluteY="12dp" />
