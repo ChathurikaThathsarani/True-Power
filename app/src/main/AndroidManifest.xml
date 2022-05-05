@@ -36,7 +36,7 @@
         <activity
             android:name=".EditRoutineActivity"
             android:exported="true"
-            android:label="" />
+            android:label="@string/tv_edit_routine_label" />
         <activity
             android:name=".RegisterActivity"
             android:exported="true"

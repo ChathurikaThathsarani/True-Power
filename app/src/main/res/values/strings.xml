@@ -36,6 +36,13 @@
     <string name="et_add_routine_description">Description</string>
     <string name="et_add_routine_status">Status</string>
     <string name="btn_add_routine">Submit</string>
+    <string name="tv_edit_routine_label">Edit Routine</string>
+    <string name="tv_edit_routine_title">Edit your routine</string>
+    <string name="et_edit_routine_name">Routine Name</string>
+    <string name="et_edit_routine_date">Day To Complete</string>
+    <string name="et_edit_routine_description">Description</string>
+    <string name="et_edit_routine_status">Status</string>
+    <string name="btn_edit_routine">Submit</string>
     <string name="tv_alarm_no">No Alarm set</string>
     <string name="tv_alarm_set">Set Alarm</string>
     <string name="tv_alarm_cancel">Cancel alarm</string>
