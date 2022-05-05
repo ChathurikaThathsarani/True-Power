@@ -43,9 +43,10 @@
     <string name="et_edit_routine_description">Description</string>
     <string name="et_edit_routine_status">Status</string>
     <string name="btn_edit_routine">Submit</string>
+    <string name="tv_alarm_notification_label">Alarm Notification</string>
     <string name="tv_alarm_no">No Alarm set</string>
-    <string name="tv_alarm_set">Set Alarm</string>
-    <string name="tv_alarm_cancel">Cancel alarm</string>
+    <string name="btn_alarm_set">Set Alarm</string>
+    <string name="btn_alarm_cancel">Cancel alarm</string>
     <string name="tv_alarm_title">Set Your Alarm</string>
     <string name="img_logo_name" />
     <string name="img_innovation" />
