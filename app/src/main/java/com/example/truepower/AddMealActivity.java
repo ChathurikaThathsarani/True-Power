@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -16,6 +17,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -106,16 +108,24 @@ public class AddMealActivity extends AppCompatActivity implements AdapterView.On
         String m_calories = calories.getText().toString();
 
         if(TextUtils.isEmpty(m_name)){
-            Toast.makeText(AddMealActivity.this,"Meal name is required !",Toast.LENGTH_SHORT).show();
+            mealName.setError("Meal Name is required !");
         }
         if(m_category.equals("Meal Category")){
-            Toast.makeText(AddMealActivity.this,"Select a valid Meal Category",Toast.LENGTH_SHORT).show();
+            TextView errorText = (TextView)mealCategory.getSelectedView();
+            errorText.setTextColor(Color.RED);
+            errorText.setText("Enter Meal Category");
+            errorText.setError("Enter Meal Category");
+            return;
         }
         if(m_type.equals("Meal Type")){
-            Toast.makeText(AddMealActivity.this,"Select a valid Meal Type",Toast.LENGTH_SHORT).show();
+            TextView errorText = (TextView)mealType.getSelectedView();
+            errorText.setTextColor(Color.RED);
+            errorText.setText("Enter Meal Type");
+            errorText.setError("Enter Meal Type");
+            return;
         }
         if(TextUtils.isEmpty(m_calories)){
-            mealName.setError("Calorie count is required !");
+            calories.setError("Calorie count is required !");
         }
         else{
             String id =meal.push().getKey();
