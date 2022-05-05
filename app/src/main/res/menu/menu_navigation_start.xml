@@ -5,17 +5,17 @@
     <item
         android:id="@+id/item_start"
         android:icon="@drawable/ic_baseline_start"
-        android:title="@string/item_start" />
+        android:title="@string/blank" />
 
     <item
         android:id="@+id/item_login"
         android:icon="@drawable/ic_baseline_login"
-        android:title="@string/item_login" />
+        android:title="@string/blank" />
 
     <item
         android:id="@+id/item_register"
         android:icon="@drawable/ic_baseline_register"
-        android:title="@string/item_register" />
+        android:title="@string/blank" />
 
 
 </menu>
