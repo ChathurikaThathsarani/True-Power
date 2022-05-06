@@ -25,7 +25,6 @@ public class AlarmNotification extends AppCompatActivity implements TimePickerDi
         setContentView(R.layout.activity_alarm_notification);
 
         mTextView = findViewById(R.id.tv_no_alarm_set);
-
         Button buttonTimePicker = findViewById(R.id.button_timepicker);
         buttonTimePicker.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,7 +48,6 @@ public class AlarmNotification extends AppCompatActivity implements TimePickerDi
         c.set(Calendar.HOUR_OF_DAY, hourOfDay);
         c.set(Calendar.MINUTE, minute);
         c.set(Calendar.SECOND, 0);
-
         updateTimeText(c);
         startAlarm(c);
     }
@@ -57,7 +55,6 @@ public class AlarmNotification extends AppCompatActivity implements TimePickerDi
     private void updateTimeText(Calendar c) {
         String timeText = "Alarm set for: ";
         timeText += DateFormat.getTimeInstance(DateFormat.SHORT).format(c.getTime());
-
         mTextView.setText(timeText);
     }
 
@@ -69,7 +66,6 @@ public class AlarmNotification extends AppCompatActivity implements TimePickerDi
         if (c.before(Calendar.getInstance())) {
             c.add(Calendar.DATE, 1);
         }
-
         alarmManager.setExact(AlarmManager.RTC_WAKEUP, c.getTimeInMillis(), pendingIntent);
     }
 
@@ -77,7 +73,6 @@ public class AlarmNotification extends AppCompatActivity implements TimePickerDi
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(this, AlertReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 1, intent, 0);
-
         alarmManager.cancel(pendingIntent);
         mTextView.setText("Alarm canceled");
     }
