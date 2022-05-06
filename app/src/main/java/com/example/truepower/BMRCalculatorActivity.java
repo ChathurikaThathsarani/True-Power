@@ -2,6 +2,7 @@ package com.example.truepower;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -40,8 +41,6 @@ public class BMRCalculatorActivity extends AppCompatActivity implements AdapterV
             public void onClick(View v) {
                 calculateBMR();
             }
-
-
         });
     }
 
@@ -66,7 +65,6 @@ public class BMRCalculatorActivity extends AppCompatActivity implements AdapterV
             answer=447.6+(9.25*r_weight)+(3.10*r_height)-(4.33*r_age);
             answerV.setText(String.format("BMR : %.2f", answer));
         }
-
     }
 
     @Override
@@ -79,4 +77,9 @@ public class BMRCalculatorActivity extends AppCompatActivity implements AdapterV
 
     }
 
+    public void backToMyProfile(View view) {
+        Intent intent = new Intent(this, UserProfileActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

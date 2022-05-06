@@ -1,4 +1,5 @@
 package com.example.truepower;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -23,7 +25,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class RoutineAdapter extends FirebaseRecyclerAdapter<Routine, RoutineAdapter.routineViewholder>{
+public class RoutineAdapter extends FirebaseRecyclerAdapter<Routine, RoutineAdapter.routineViewholder> {
 
     private Context context;
     private DatabaseReference routine;
@@ -31,27 +33,24 @@ public class RoutineAdapter extends FirebaseRecyclerAdapter<Routine, RoutineAdap
     String id;
 
 
-
     public RoutineAdapter(
-            @NonNull FirebaseRecyclerOptions<Routine> options,Context context)
-    {
+            @NonNull FirebaseRecyclerOptions<Routine> options, Context context) {
         super(options);
         this.context = context;
     }
+
     public RoutineAdapter(
-            @NonNull FirebaseRecyclerOptions<Routine> options)
-    {
+            @NonNull FirebaseRecyclerOptions<Routine> options) {
         super(options);
     }
 
     protected void onBindViewHolder(@NonNull routineViewholder holder,
-                     int position, @NonNull Routine model)
-    {
+                                    int position, @NonNull Routine model) {
         holder.name.setText(model.getName());
         holder.date.setText(model.getDate());
         holder.description.setText(model.getDescription());
         holder.status.setText(model.getStatus());
-        id=model.getId();
+        id = model.getId();
 
         holder.edit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,7 +91,7 @@ public class RoutineAdapter extends FirebaseRecyclerAdapter<Routine, RoutineAdap
             }
 
             private void routineDelete(View view) {
-                routine.child(id).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                routine.child(model.getId()).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
@@ -107,38 +106,30 @@ public class RoutineAdapter extends FirebaseRecyclerAdapter<Routine, RoutineAdap
     }
 
     public routineViewholder onCreateViewHolder(@NonNull ViewGroup parent,
-                       int viewType)
-    {
-        View view
-                = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.routine, parent, false);
+                                                int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.routine, parent, false);
         return new RoutineAdapter.routineViewholder(view);
     }
 
-
     class routineViewholder extends RecyclerView.ViewHolder {
 
-        TextView name, date, description,status;
-        Button edit,delete;
+        TextView name, date, description, status;
+        Button edit, delete;
 
-
-        public routineViewholder(@NonNull View itemView)
-        {
+        public routineViewholder(@NonNull View itemView) {
             super(itemView);
 
             name = itemView.findViewById(R.id.routine_name);
             date = itemView.findViewById(R.id.date);
             description = itemView.findViewById(R.id.description);
             status = itemView.findViewById(R.id.status);
-            edit=itemView.findViewById(R.id.edit);
-            delete=itemView.findViewById(R.id.delete);
-            context=itemView.getContext();
+            edit = itemView.findViewById(R.id.edit);
+            delete = itemView.findViewById(R.id.delete);
+            context = itemView.getContext();
             auth = FirebaseAuth.getInstance();
-            routine= FirebaseDatabase.getInstance().getReference().child("routine").child(auth.getCurrentUser().getUid());
-
+            routine = FirebaseDatabase.getInstance().getReference().child("routine").child(auth.getCurrentUser().getUid());
 
         }
-
 
     }
 }

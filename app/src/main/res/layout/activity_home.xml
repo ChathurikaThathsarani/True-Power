@@ -46,7 +46,9 @@
                     android:onClick="openMeal"
                     android:scaleType="centerCrop"
                     android:src="@drawable/my_meal"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    tools:ignore="SpeakableTextPresentCheck|TextContrastCheck"
+                    android:importantForAutofill="no"
+                    android:contentDescription="@string/img_description"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -54,7 +56,7 @@
                     android:text="@string/my_meal"
                     android:textAlignment="center"
                     android:textColor="@color/dark_green"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -86,7 +88,8 @@
                     android:onClick="openWorkout"
                     android:scaleType="centerCrop"
                     android:src="@drawable/my_workout"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:contentDescription="@string/img_description"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -94,7 +97,7 @@
                     android:text="@string/my_workout"
                     android:textAlignment="center"
                     android:textColor="@color/dark_green"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -123,10 +126,12 @@
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
+                    android:contentDescription="@string/img_description"
+                    android:importantForAutofill="no"
                     android:onClick="openHealth"
                     android:scaleType="centerCrop"
                     android:src="@drawable/my_health"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    tools:ignore="SpeakableTextPresentCheck|TextContrastCheck,ImageContrastCheck" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -134,7 +139,7 @@
                     android:text="@string/my_health"
                     android:textAlignment="center"
                     android:textColor="@color/dark_green"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -166,7 +171,8 @@
                     android:onClick="openRoutine"
                     android:scaleType="centerCrop"
                     android:src="@drawable/my_routine"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:contentDescription="@string/img_description"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -174,7 +180,7 @@
                     android:text="@string/my_routine"
                     android:textAlignment="center"
                     android:textColor="@color/dark_green"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -194,11 +200,12 @@
         android:id="@+id/img_home_open_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:onClick="openProfile"
         app:srcCompat="@mipmap/ic_user_profile"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/img_description"/>
 
     <Button
         android:id="@+id/btn_music"
@@ -212,17 +219,18 @@
         android:textColor="@color/black"
         tools:ignore="SpeakableTextPresentCheck"
         android:drawableRight="@drawable/ic_baseline_music"
-        android:paddingLeft="25dp"/>
+        android:paddingStart="25dp"/>
 
     <ImageView
         android:id="@+id/img_home_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_marginTop="10dp"
         android:onClick="logOut"
         app:srcCompat="@mipmap/ic_logout"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/img_description"/>
 
 </RelativeLayout>

@@ -54,6 +54,7 @@
     <string name="btn_play">Play</string>
     <string name="btn_pause">Pause</string>
     <string name="btn_stop">Stop</string>
+    <string name="music_player">Music Player</string>
     <string name="et_bmr_answer" />
     <string name="btn_bmr_submit">Submit</string>
     <string name="tv_alarm_notification_label">Alarm Notification</string>
@@ -61,6 +62,7 @@
     <string name="btn_alarm_set">Set Alarm</string>
     <string name="btn_alarm_cancel">Cancel alarm</string>
     <string name="tv_alarm_title">Set Your Alarm</string>
+    <string name="img_description"></string>
     <string name="img_logo_name" />
     <string name="img_innovation" />
     <string name="img_team_name" />

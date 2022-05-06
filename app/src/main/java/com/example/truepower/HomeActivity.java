@@ -23,9 +23,7 @@ public class HomeActivity extends AppCompatActivity {
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_home);
         bottomNavigationView.setSelectedItemId(R.id.home);
-
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-
 
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -79,16 +77,16 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(this, UserProfileActivity.class);
         startActivity(intent);
     }
-
-    public void openMusic(View view) {
-        Intent intent = new Intent(this, MusicActivity.class);
-        startActivity(intent);
-    }
-
+    
     public void logOut(View view) {
         FirebaseAuth.getInstance().signOut();
         Toast.makeText(HomeActivity.this,"Logout Successful",Toast.LENGTH_SHORT).show();
         startActivity(new Intent(HomeActivity.this,LoginActivity.class));
         finish();
+    }
+
+    public void openMusic(View view) {
+        Intent intent = new Intent(this, MusicActivity.class);
+        startActivity(intent);
     }
 }

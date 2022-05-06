@@ -11,9 +11,10 @@
         android:id="@+id/img_back_to_my_routine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:onClick="backToMyRoutine"
+        android:contentDescription="@string/img_description"
         app:srcCompat="@mipmap/ic_back"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -49,7 +50,7 @@
         android:id="@+id/tv_set_alarm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
         android:text="@string/tv_alarm_title"
         android:textColor="@color/white"

@@ -14,7 +14,8 @@
         android:theme="@style/Theme.TruePower">
         <activity
             android:name=".MusicActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:label="@string/music_player"/>
         <activity
             android:name=".CountdownTimer"
             android:exported="true"

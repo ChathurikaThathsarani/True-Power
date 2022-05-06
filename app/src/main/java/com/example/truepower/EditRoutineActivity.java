@@ -29,7 +29,7 @@ public class EditRoutineActivity extends AppCompatActivity {
     private Bundle bundle;
 
     private FirebaseAuth auth;
-    private DatabaseReference  routine;
+    private DatabaseReference routine;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +43,7 @@ public class EditRoutineActivity extends AppCompatActivity {
         submit = findViewById(R.id.edit_routine);
         bundle = getIntent().getExtras();
         auth = FirebaseAuth.getInstance();
-        routine=FirebaseDatabase.getInstance().getReference().child("routine").child(auth.getCurrentUser().getUid());
+        routine = FirebaseDatabase.getInstance().getReference().child("routine").child(auth.getCurrentUser().getUid());
         displayRoutineDetails();
 
         submit.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +53,7 @@ public class EditRoutineActivity extends AppCompatActivity {
             }
         });
     }
+
     private void displayRoutineDetails() {
         name.setText(bundle.getString("name"));
         date.setText(bundle.getString("date"));
@@ -66,14 +67,12 @@ public class EditRoutineActivity extends AppCompatActivity {
         final EditText description = findViewById(R.id.description);
         final EditText spinner = findViewById(R.id.spinner_status);
 
-        String r_name =name.getText().toString();
-        String r_date=date.getText().toString();
-        String r_description=description.getText().toString();
-        String r_status=spinner.getText().toString();
+        String r_name = name.getText().toString();
+        String r_date = date.getText().toString();
+        String r_description = description.getText().toString();
+        String r_status = spinner.getText().toString();
         String id = bundle.getString("id");
 
-
-        // validations
         if (TextUtils.isEmpty(r_name)) {
             name.setError("Name is required");
             return;
@@ -91,8 +90,7 @@ public class EditRoutineActivity extends AppCompatActivity {
             return;
         }
 
-
-        Routine updateRoutine = new Routine(id, r_name, r_description, r_status,r_date);
+        Routine updateRoutine = new Routine(id, r_name, r_description, r_status, r_date);
         routine.child(id).setValue(updateRoutine).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
@@ -100,15 +98,12 @@ public class EditRoutineActivity extends AppCompatActivity {
                     Toast.makeText(EditRoutineActivity.this, "Routine Updated", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(EditRoutineActivity.this, RoutineActivity.class);
                     startActivity(intent);
-
                 } else {
-
                     Toast.makeText(EditRoutineActivity.this, "Routine Update Failed", Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
-
 
 
     public void backToMyRoutine(View view) {
