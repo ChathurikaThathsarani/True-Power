@@ -92,7 +92,7 @@ public class RoutineAdapter extends FirebaseRecyclerAdapter<Routine, RoutineAdap
             }
 
             private void routineDelete(View view) {
-                routine.child(id).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                routine.child(model.getId()).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
