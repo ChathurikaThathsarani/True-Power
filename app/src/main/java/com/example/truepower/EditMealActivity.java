@@ -44,8 +44,6 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
     private FirebaseAuth auth;
     private DatabaseReference meal;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -121,7 +119,6 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
         String m_calories = calories.getText().toString();
         String id = bundle.getString("id");
 
-
         // validations
         if(TextUtils.isEmpty(m_name)){
             mealName.setError("Meal name is required !");
@@ -144,7 +141,6 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
             calories.setError("Calorie count is required !");
         }
 
-
         Meal updateMeal = new Meal(id,m_name,m_category,m_type,m_calories);
         meal.child(id).setValue(updateMeal).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
@@ -159,23 +155,24 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
                 } else {
 
                     Toast.makeText(EditMealActivity.this, "Meal Update Failed", Toast.LENGTH_SHORT).show();
+
                 }
             }
         });
     }
 
-
-
     public void backToMyMeal(View view) {
         Intent intent = new Intent(this, MealActivity.class);
         startActivity(intent);
+        finish();
     }
 
     public EditMealActivity() {
+
     }
 
-
     public void setOnClickListener(View.OnClickListener onClickListener) {
+
     }
 
     @Override

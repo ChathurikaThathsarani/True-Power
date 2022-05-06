@@ -36,7 +36,6 @@ public class AddMealActivity extends AppCompatActivity implements AdapterView.On
     private DatabaseReference meal;
     private FirebaseAuth auth;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,8 +78,6 @@ public class AddMealActivity extends AppCompatActivity implements AdapterView.On
         mealTypeDataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mealType.setAdapter(mealTypeDataAdapter);
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_home);
-
         auth=FirebaseAuth.getInstance();
         meal= FirebaseDatabase.getInstance().getReference().child("meal").child(auth.getCurrentUser().getUid());
         add=findViewById(R.id.btn_meal_submit);
@@ -90,12 +87,8 @@ public class AddMealActivity extends AppCompatActivity implements AdapterView.On
             public void onClick(View v) {
                 addMeal();
             }
-
         });
-
-
     }
-
     private void addMeal(){
         final EditText mealName = findViewById(R.id.et_meal_name);
         final Spinner mealCategory =  findViewById(R.id.spinner_meal_category);
@@ -134,26 +127,28 @@ public class AddMealActivity extends AppCompatActivity implements AdapterView.On
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
                     if(task.isSuccessful()){
+
                         Toast.makeText(AddMealActivity.this,"Meal added successfully",Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(AddMealActivity.this,MealActivity.class);
                         startActivity(intent);
                         finish();
+
                     }else{
+
                         Toast.makeText(AddMealActivity.this,"Error",Toast.LENGTH_SHORT).show();
+
                     }
                 }
             });
         }
-
     }
-
 
     public void backToMyMeal(View view) {
         Intent intent = new Intent(this, MealActivity.class);
         startActivity(intent);
         finish();
     }
-
+    
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 

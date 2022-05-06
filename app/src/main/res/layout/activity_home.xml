@@ -200,11 +200,26 @@
         app:srcCompat="@mipmap/ic_user_profile"
         tools:ignore="SpeakableTextPresentCheck" />
 
+    <Button
+        android:id="@+id/btn_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/white"
+        android:onClick="openMusic"
+        android:text="@string/btn_music"
+        android:textColor="@color/black"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:drawableRight="@drawable/ic_baseline_music"
+        android:paddingLeft="25dp"/>
+
     <ImageView
         android:id="@+id/img_home_logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="335dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
         android:onClick="logOut"
         app:srcCompat="@mipmap/ic_logout"
