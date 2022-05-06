@@ -41,8 +41,6 @@ public class BMRCalculatorActivity extends AppCompatActivity implements AdapterV
             public void onClick(View v) {
                 calculateBMR();
             }
-
-
         });
     }
 
@@ -67,7 +65,6 @@ public class BMRCalculatorActivity extends AppCompatActivity implements AdapterV
             answer=447.6+(9.25*r_weight)+(3.10*r_height)-(4.33*r_age);
             answerV.setText(String.format("BMR : %.2f", answer));
         }
-
     }
 
     @Override
