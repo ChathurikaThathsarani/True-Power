@@ -38,12 +38,13 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:background="@drawable/background_edittext"
-            android:drawableRight="@drawable/ic_baseline_email"
+            android:drawableEnd="@drawable/ic_baseline_email"
             android:ems="10"
             android:hint="@string/et_login_email"
             android:inputType="textEmailAddress"
             android:textAlignment="textStart"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:importantForAutofill="no"
+            tools:ignore="SpeakableTextPresentCheck|TextContrastCheck"/>
 
         <EditText
             android:id="@+id/password"
@@ -51,12 +52,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@drawable/background_edittext"
-            android:drawableRight="@drawable/ic_baseline_lock"
+            android:drawableEnd="@drawable/ic_baseline_lock"
             android:ems="10"
             android:hint="@string/et_login_password"
             android:inputType="textPassword"
             android:minHeight="48dp"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+            android:importantForAutofill="no"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck|TextContrastCheck" />
     </LinearLayout>
 
     <Button
