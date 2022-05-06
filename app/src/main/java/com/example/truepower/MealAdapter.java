@@ -87,7 +87,7 @@ public class MealAdapter extends FirebaseRecyclerAdapter<Meal, MealAdapter.mealV
             }
 
             private void mealDelete(View view) {
-                meal.child(id).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                meal.child(model.getId()).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
