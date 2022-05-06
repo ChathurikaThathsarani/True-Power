@@ -12,11 +12,12 @@
         android:id="@+id/img_back_to_my_routine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:onClick="backToMyRoutine"
         app:srcCompat="@mipmap/ic_back"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/img_description" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,12 +35,11 @@
             android:background="@drawable/background_edittext"
             android:ems="10"
             android:hint="@string/et_edit_routine_name"
-            android:inputType="textPersonName"
-            android:layout_centerHorizontal="true"
-            android:textAlignment="center"
-            android:minHeight="48dp"
             android:importantForAutofill="no"
-            tools:ignore="SpeakableTextPresentCheck|TextContrastCheck"/>
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            tools:ignore="SpeakableTextPresentCheck|TextContrastCheck" />
 
         <EditText
             android:id="@+id/day_to_complete"
@@ -50,12 +50,11 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/background_edittext"
             android:ems="10"
-            android:layout_centerHorizontal="true"
-            android:textAlignment="center"
             android:hint="@string/et_edit_routine_date"
+            android:importantForAutofill="no"
             android:inputType="date"
             android:minHeight="48dp"
-            android:importantForAutofill="no"
+            android:textAlignment="center"
             tools:ignore="SpeakableTextPresentCheck|TextContrastCheck" />
 
         <EditText
@@ -67,11 +66,10 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/background_edittext"
             android:ems="10"
-            android:layout_centerHorizontal="true"
-            android:textAlignment="center"
             android:hint="@string/et_edit_routine_description"
-            android:inputType="textMultiLine"
             android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:textAlignment="center"
             tools:ignore="SpeakableTextPresentCheck|TextContrastCheck" />
 
         <EditText
@@ -81,14 +79,12 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
-            android:hint="@string/et_edit_routine_status"
-            android:textAlignment="center"
             android:background="@drawable/background_edittext"
-            android:inputType="textPersonName"
-            android:layout_centerHorizontal="true"
+            android:hint="@string/et_edit_routine_status"
             android:importantForAutofill="no"
-            tools:ignore="SpeakableTextPresentCheck|TextContrastCheck"
-             />
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            tools:ignore="SpeakableTextPresentCheck|TextContrastCheck" />
 
         <Button
             android:id="@+id/edit_routine"
@@ -106,7 +102,7 @@
         android:id="@+id/tv_edit_routine_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
         android:layout_marginTop="20dp"
         android:text="@string/tv_edit_routine_title"
         android:textColor="@color/white"
