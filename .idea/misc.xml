@@ -59,30 +59,7 @@
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/activity_workout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/list_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/menu/menu_navigation_home.xml" value="0.25416666666666665" />
-
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/drawable/ic_baseline_login.xml" value="0.1" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/drawable/ic_baseline_workout.xml" value="0.22864583333333333" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_add_meal.xml" value="0.33" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_add_routine.xml" value="0.21467391304347827" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_add_workout.xml" value="0.25" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_bmi_calculation_main.xml" value="0.23052536231884058" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_bmi_calculator.xml" value="0.23505434782608695" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_bmicalculation.xml" value="0.18819655521783182" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_countdown_timer.xml" value="0.2140625" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_edit_meal.xml" value="0.1" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_edit_routine.xml" value="0.27898550724637683" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_edit_workout.xml" value="0.25" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_energy_calculator.xml" value="0.1" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_login.xml" value="0.16077898550724637" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_meal.xml" value="0.22554347826086957" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_routine.xml" value="0.21920289855072464" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_splash_screen.xml" value="0.21920289855072464" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_timer.xml" value="0.29375" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_workout.xml" value="0.1" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/meal_item.xml" value="0.18" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/routine.xml" value="0.225" />
-        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/workout_session.xml" value="0.22" />
-
+        <entry key="..\:/Users/Tech/Videos/Charith/True-Power/app/src/main/res/layout/workout_session.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Tech/Videos/MAD/True-Power/app/src/main/res/layout/activity_add_routine.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Tech/Videos/MAD/True-Power/app/src/main/res/layout/activity_bmrcalculator.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Tech/Videos/MAD_TEST/True-Power/app/src/main/res/layout/activity_add_meal.xml" value="0.1793478260869565" />
@@ -105,7 +82,28 @@
         <entry key="..\:/Users/Tech/Videos/True-Power/app/src/main/res/layout/activity_login.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/Tech/Videos/True-Power/app/src/main/res/layout/activity_routine.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tech/Videos/True-Power/app/src/main/res/layout/routine.xml" value="0.2463768115942029" />
-
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/drawable/ic_baseline_login.xml" value="0.1" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/drawable/ic_baseline_workout.xml" value="0.22864583333333333" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_add_meal.xml" value="0.33" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_add_routine.xml" value="0.21467391304347827" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_add_workout.xml" value="0.25" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_bmi_calculation_main.xml" value="0.23052536231884058" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_bmi_calculator.xml" value="0.23505434782608695" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_bmicalculation.xml" value="0.18819655521783182" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_countdown_timer.xml" value="0.2140625" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_edit_meal.xml" value="0.1" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_edit_routine.xml" value="0.27898550724637683" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_edit_workout.xml" value="0.25" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_energy_calculator.xml" value="0.1" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_login.xml" value="0.16077898550724637" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_meal.xml" value="0.22554347826086957" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_routine.xml" value="0.21920289855072464" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_splash_screen.xml" value="0.21920289855072464" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_timer.xml" value="0.29375" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_workout.xml" value="0.1" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/meal_item.xml" value="0.18" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/routine.xml" value="0.225" />
+        <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/workout_session.xml" value="0.22" />
       </map>
     </option>
   </component>
