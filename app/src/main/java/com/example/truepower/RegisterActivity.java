@@ -102,7 +102,7 @@ public class RegisterActivity extends AppCompatActivity {
                             finish();
                         }
                         else{
-                            Toast.makeText(RegisterActivity.this,"User Registration Failed", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this,"User Registration Failed : " +task.getException().getMessage() , Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
