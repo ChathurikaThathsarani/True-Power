@@ -35,6 +35,7 @@ public class MusicActivity extends AppCompatActivity {
         mediaPlayer = null;
         //by releasing the memory the object has to be re instantiated. it is done by play method
     }
+
     public void backToHome(View view) {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);

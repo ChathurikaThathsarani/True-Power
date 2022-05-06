@@ -54,7 +54,7 @@
     <string name="btn_play">Play</string>
     <string name="btn_pause">Pause</string>
     <string name="btn_stop">Stop</string>
-    <string name="et_bmr_answer"></string>
+    <string name="et_bmr_answer" />
     <string name="btn_bmr_submit">Submit</string>
     <string name="tv_alarm_notification_label">Alarm Notification</string>
     <string name="tv_alarm_no">No Alarm set</string>

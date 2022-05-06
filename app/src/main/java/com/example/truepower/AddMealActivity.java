@@ -127,17 +127,22 @@ public class AddMealActivity extends AppCompatActivity implements AdapterView.On
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
                     if(task.isSuccessful()){
+
                         Toast.makeText(AddMealActivity.this,"Meal added successfully",Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(AddMealActivity.this,MealActivity.class);
                         startActivity(intent);
                         finish();
+
                     }else{
+
                         Toast.makeText(AddMealActivity.this,"Error",Toast.LENGTH_SHORT).show();
+
                     }
                 }
             });
         }
     }
+
     public void backToMyMeal(View view) {
         Intent intent = new Intent(this, MealActivity.class);
         startActivity(intent);

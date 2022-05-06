@@ -44,8 +44,6 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
     private FirebaseAuth auth;
     private DatabaseReference meal;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -157,23 +155,24 @@ public class EditMealActivity extends AppCompatActivity implements AdapterView.O
                 } else {
 
                     Toast.makeText(EditMealActivity.this, "Meal Update Failed", Toast.LENGTH_SHORT).show();
+
                 }
             }
         });
     }
 
-
-
     public void backToMyMeal(View view) {
         Intent intent = new Intent(this, MealActivity.class);
         startActivity(intent);
+        finish();
     }
 
     public EditMealActivity() {
+
     }
 
-
     public void setOnClickListener(View.OnClickListener onClickListener) {
+
     }
 
     @Override
