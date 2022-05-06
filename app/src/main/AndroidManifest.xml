@@ -3,7 +3,6 @@
     package="com.example.truepower">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
 
     <application
@@ -13,25 +12,25 @@
         android:roundIcon="@drawable/logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TruePower">
-
-
+        <activity
+            android:name=".MusicActivity"
+            android:exported="false" />
         <activity
             android:name=".CountdownTimer"
             android:exported="true"
-            android:label="@string/countdown_timer"/>
+            android:label="@string/countdown_timer" />
         <activity
             android:name=".BMICalculator"
             android:exported="true"
-            android:label="@string/bmi_topic"/>
+            android:label="@string/bmi_topic" />
         <activity
             android:name=".EditWorkoutActivity"
             android:exported="true"
-            android:label="@string/edit_workout_topic"/>
+            android:label="@string/edit_workout_topic" />
         <activity
             android:name=".AddWorkout"
             android:exported="true"
-            android:label="@string/add_workout_topic"/>
-
+            android:label="@string/add_workout_topic" />
         <activity
             android:name=".AlarmNotification"
             android:exported="true"
@@ -40,13 +39,11 @@
             android:name=".EnergyCalculatorActivity"
             android:exported="true"
             android:label="@string/energy_calculator" />
-
-
         <activity
             android:name=".BMRCalculatorActivity"
             android:exported="true"
             android:label="@string/tv_bmr_calculator_label" />
-       <activity
+        <activity
             android:name=".EditMealActivity"
             android:exported="true"
             android:label="@string/edit_meal" />
@@ -105,6 +102,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <receiver android:name=".AlertReceiver" />
     </application>
 

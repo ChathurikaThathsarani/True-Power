@@ -28,12 +28,10 @@ public class MealActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meal);
 
-
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_home);
         bottomNavigationView.setSelectedItemId(R.id.meal);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-
 
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -61,11 +59,9 @@ public class MealActivity extends AppCompatActivity {
                         finish();
                         return true;
                 }
-
                 return false;
             }
         });
-
         recyclerView = (RecyclerView) findViewById(R.id.meal_recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         auth= FirebaseAuth.getInstance();
@@ -76,7 +72,6 @@ public class MealActivity extends AppCompatActivity {
                 .build();
         adapter = new MealAdapter(options);
         recyclerView.setAdapter(adapter);
-
 
     }
     public void addMeal(View view) {
