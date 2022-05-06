@@ -19,6 +19,9 @@ public class Meal {
         this.calories = calories;
     }
 
+    public Meal(String id, String w_workoutName, String w_workoutRepetitionVar, String w_workoutTimeVar) {
+    }
+
     public String getId() {
         return id;
     }
