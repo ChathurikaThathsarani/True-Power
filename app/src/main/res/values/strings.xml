@@ -99,5 +99,22 @@
     <string name="rd_btn_kj">Kilo Joules</string>
     <string name="rd_btn_j">Joules</string>
 
+    <string name="wk_add_your_workout"> Add Your Workout</string>
+    <string name="wk_workout_name"> Workout Name</string>
+    <string name="wk_workout_repetition">Repetition</string>
+    <string name="wk_workout_time">Time</string>
+    <string name="wk_edit_your_workout">Edit Your Workout</string>
+    <string name="wk_bmi_calculator">BMI Calculator</string>
+    <string name="wk_enter_weight">Enter Weight (Kilograms)</string>
+    <string name="wk_enter_height">Enter Height  (Centimeters)</string>
+    <string name="wk_bmi_answer_txt">Answer </string>
+    <string name="wk_start_pause_timer">START</string>
+    <string name="wk_reset_timer">Reset</string>
+    <string name="wk_timer_name">Countdown Timer</string>
 
+    <string name="view_workout">View Workout</string>
+    <string name="add_workout_topic">Add Workout</string>
+    <string name="countdown_timer">Countdown Timer</string>
+    <string name="edit_workout_topic">Edit Workout</string>
+    <string name="bmi_topic">BMI Calculator</string>
 </resources>
