@@ -119,16 +119,15 @@ public class AddWorkout extends AppCompatActivity implements AdapterView.OnItemS
                 public void onComplete(@NonNull Task<Void> task) {
                     if (task.isSuccessful()) {
                         try {
-                            Uri notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-                            Ringtone r = RingtoneManager.getRingtone(getApplicationContext(), notification);
-                            r.play();
+                            Toast.makeText(AddWorkout.this, "Workout added successfully", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(AddWorkout.this, WorkoutActivity.class);
+                            startActivity(intent);
+                            finish();
+
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
-                        Toast.makeText(AddWorkout.this, "Workout added successfully", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(AddWorkout.this, Workout.class);
-                        startActivity(intent);
-                        finish();
+
                     } else {
                         Toast.makeText(AddWorkout.this, "Error", Toast.LENGTH_SHORT).show();
                     }
