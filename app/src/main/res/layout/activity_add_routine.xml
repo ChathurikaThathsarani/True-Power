@@ -12,9 +12,10 @@
         android:id="@+id/img_back_to_my_routine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:onClick="backToMyRoutine"
+        android:contentDescription="@string/img_description"
         app:srcCompat="@mipmap/ic_back"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -35,6 +36,7 @@
             android:ems="10"
             android:hint="@string/et_add_routine_name"
             android:inputType="textPersonName"
+            android:textAlignment="center"
             android:minHeight="48dp"
             android:importantForAutofill="no"
             tools:ignore="SpeakableTextPresentCheck|TextContrastCheck"/>
@@ -50,6 +52,7 @@
             android:ems="10"
             android:hint="@string/et_add_routine_date"
             android:inputType="date"
+            android:textAlignment="center"
             android:minHeight="48dp"
             android:importantForAutofill="no"
             tools:ignore="SpeakableTextPresentCheck|TextContrastCheck" />
@@ -63,8 +66,8 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/background_edittext"
             android:ems="10"
-            android:gravity="start|top"
             android:hint="@string/et_add_routine_description"
+            android:textAlignment="center"
             android:inputType="textMultiLine"
             android:importantForAutofill="no"
             tools:ignore="SpeakableTextPresentCheck|TextContrastCheck"
@@ -79,6 +82,7 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/background_edittext"
             android:prompt="@string/et_add_routine_status"
+            android:textAlignment="center"
             android:spinnerMode="dropdown"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -98,7 +102,7 @@
         android:id="@+id/tv_add_routine_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp"
         android:layout_marginTop="20dp"
         android:text="@string/tv_add_routine_title"
         android:textColor="@color/white"

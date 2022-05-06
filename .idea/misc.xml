@@ -62,11 +62,19 @@
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/activity_workout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/layout/list_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/menu/menu_navigation_home.xml" value="0.25416666666666665" />
-
         <entry key="..\:/Users/Tech/Videos/Charith/True-Power/app/src/main/res/layout/workout_session.xml" value="0.13020833333333334" />
-
         <entry key="..\:/Users/Tech/Videos/MAD/True-Power/app/src/main/res/layout/activity_add_routine.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Tech/Videos/MAD/True-Power/app/src/main/res/layout/activity_bmrcalculator.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Tech/Videos/MAD_T3/True-Power/app/src/main/res/layout/activity_add_meal.xml" value="0.24003623188405798" />
+        <entry key="..\:/Users/Tech/Videos/MAD_T3/True-Power/app/src/main/res/layout/activity_add_routine.xml" value="0.24003623188405798" />
+        <entry key="..\:/Users/Tech/Videos/MAD_T3/True-Power/app/src/main/res/layout/activity_alarm_notification.xml" value="0.24003623188405798" />
+        <entry key="..\:/Users/Tech/Videos/MAD_T3/True-Power/app/src/main/res/layout/activity_bmrcalculator.xml" value="0.24003623188405798" />
+        <entry key="..\:/Users/Tech/Videos/MAD_T3/True-Power/app/src/main/res/layout/activity_edit_meal.xml" value="0.24003623188405798" />
+        <entry key="..\:/Users/Tech/Videos/MAD_T3/True-Power/app/src/main/res/layout/activity_edit_routine.xml" value="0.24003623188405798" />
+        <entry key="..\:/Users/Tech/Videos/MAD_T3/True-Power/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Users/Tech/Videos/MAD_T3/True-Power/app/src/main/res/layout/activity_login.xml" value="0.24003623188405798" />
+        <entry key="..\:/Users/Tech/Videos/MAD_T3/True-Power/app/src/main/res/layout/activity_routine.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Tech/Videos/MAD_T3/True-Power/app/src/main/res/layout/routine.xml" value="0.24003623188405798" />
         <entry key="..\:/Users/Tech/Videos/MAD_TEST/True-Power/app/src/main/res/layout/activity_add_meal.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/Tech/Videos/MAD_TEST/True-Power/app/src/main/res/layout/activity_add_routine.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/Tech/Videos/MAD_TEST/True-Power/app/src/main/res/layout/activity_edit_meal.xml" value="0.1793478260869565" />
@@ -83,8 +91,6 @@
         <entry key="..\:/Users/Tech/Videos/True-Power/app/src/main/res/layout/activity_login.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/Tech/Videos/True-Power/app/src/main/res/layout/activity_routine.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tech/Videos/True-Power/app/src/main/res/layout/routine.xml" value="0.2463768115942029" />
-
-
         <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/drawable/ic_baseline_login.xml" value="0.1" />
         <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/drawable/ic_baseline_workout.xml" value="0.22864583333333333" />
         <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/activity_add_meal.xml" value="0.33" />
@@ -107,7 +113,6 @@
         <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/meal_item.xml" value="0.18" />
         <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/routine.xml" value="0.225" />
         <entry key="..\:/clone test/New folder/True-Power/app/src/main/res/layout/workout_session.xml" value="0.22" />
-
       </map>
     </option>
   </component>

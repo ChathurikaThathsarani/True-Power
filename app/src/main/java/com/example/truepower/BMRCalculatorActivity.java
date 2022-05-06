@@ -2,6 +2,7 @@ package com.example.truepower;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -79,4 +80,9 @@ public class BMRCalculatorActivity extends AppCompatActivity implements AdapterV
 
     }
 
+    public void backToMyProfile(View view) {
+        Intent intent = new Intent(this, UserProfileActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }
