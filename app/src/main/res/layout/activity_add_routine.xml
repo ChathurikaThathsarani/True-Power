@@ -35,6 +35,8 @@
             android:ems="10"
             android:hint="@string/et_add_routine_name"
             android:inputType="textPersonName"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
             android:minHeight="48dp"
             android:importantForAutofill="no"
             tools:ignore="SpeakableTextPresentCheck|TextContrastCheck"/>
@@ -50,6 +52,8 @@
             android:ems="10"
             android:hint="@string/et_add_routine_date"
             android:inputType="date"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
             android:minHeight="48dp"
             android:importantForAutofill="no"
             tools:ignore="SpeakableTextPresentCheck|TextContrastCheck" />
@@ -63,8 +67,9 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/background_edittext"
             android:ems="10"
-            android:gravity="start|top"
             android:hint="@string/et_add_routine_description"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
             android:inputType="textMultiLine"
             android:importantForAutofill="no"
             tools:ignore="SpeakableTextPresentCheck|TextContrastCheck"
@@ -79,6 +84,8 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/background_edittext"
             android:prompt="@string/et_add_routine_status"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
             android:spinnerMode="dropdown"
             tools:ignore="SpeakableTextPresentCheck" />
 
