@@ -91,7 +91,7 @@ public class WorkoutAdapter  extends FirebaseRecyclerAdapter<Workout, WorkoutAda
                 }
 
                 private void workoutDelete(View view) {
-                    workout.child(id).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                    workout.child(model.getId()).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {
