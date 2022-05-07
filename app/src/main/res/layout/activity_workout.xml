@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="11dp"
         android:contentDescription="@string/blank"
         android:onClick="addWorkout"
         app:srcCompat="@mipmap/ic_add"
@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="330dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="65dp"
         android:onClick="openTimer"
         app:srcCompat="@mipmap/ic_timers2" />
 </RelativeLayout>
