@@ -86,5 +86,5 @@
         android:layout_below="@id/wk_bmi_answer_txt"
         android:layout_centerHorizontal="true"
         android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textSize="32sp" />
 </RelativeLayout>
