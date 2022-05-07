@@ -73,7 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/wk_bmi_calculate"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         android:text="@string/wk_bmi_answer_txt"
         android:textColor="@color/black"
         android:textSize="18sp"
