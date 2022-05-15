@@ -22,6 +22,9 @@
         <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/layout/activity_meal.xml" value="0.33" />
+        <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/layout/activity_music.xml" value="0.23015873015873015" />
+
+
         <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/layout/activity_register.xml" value="0.33" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/layout/activity_routine.xml" value="0.266015625" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
@@ -116,7 +119,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.33" />
+        <option name="scale" value="0.35052083333333334" />
       </ProjectState>
     </option>
   </component>
