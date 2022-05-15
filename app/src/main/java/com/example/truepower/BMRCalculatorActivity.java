@@ -72,6 +72,7 @@ public class BMRCalculatorActivity extends AppCompatActivity implements AdapterV
 
     }
 
+
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
