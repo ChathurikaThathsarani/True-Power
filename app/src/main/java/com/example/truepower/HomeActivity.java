@@ -33,18 +33,22 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.health:
                         startActivity(new Intent(getApplicationContext(), HealthActivity.class));
                         overridePendingTransition(0, 0);
+                        finish();
                         return true;
                     case R.id.meal:
                         startActivity(new Intent(getApplicationContext(), MealActivity.class));
                         overridePendingTransition(0, 0);
+                        finish();
                         return true;
                     case R.id.routine:
                         startActivity(new Intent(getApplicationContext(), RoutineActivity.class));
                         overridePendingTransition(0, 0);
+                        finish();
                         return true;
                     case R.id.workout:
                         startActivity(new Intent(getApplicationContext(), WorkoutActivity.class));
                         overridePendingTransition(0, 0);
+                        finish();
                         return true;
                 }
 
