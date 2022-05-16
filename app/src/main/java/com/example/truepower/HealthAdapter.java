@@ -94,7 +94,7 @@ public class HealthAdapter extends FirebaseRecyclerAdapter<Health, HealthAdapter
             }
 
             private void routineDelete(View view) {
-                health.child(id).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                health.child(model.getId()).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
