@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TruePower">
         <activity
+            android:name=".EditHealth"
+            android:exported="false" />
+        <activity
+            android:name=".AddHealth"
+            android:exported="false" />
+        <activity
             android:name=".MusicActivity"
             android:exported="true"
             android:label="@string/music_player" />
@@ -62,7 +68,8 @@
             android:label="@string/sign_up" />
         <activity
             android:name=".UserProfileActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="User Profile" />
         <activity
             android:name=".AddRoutineActivity"
             android:exported="true"

@@ -71,7 +71,7 @@ public class BMICalculator extends AppCompatActivity {
 
 
     public void backToMyWorkout(View view) {
-        Intent intent = new Intent(this, Workout.class);
+        Intent intent = new Intent(this,UserProfileActivity.class);
         startActivity(intent);
         finish();
 
