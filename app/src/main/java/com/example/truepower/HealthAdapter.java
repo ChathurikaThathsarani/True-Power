@@ -34,7 +34,6 @@ public class HealthAdapter extends FirebaseRecyclerAdapter<Health, HealthAdapter
     private FirebaseAuth auth;
     String id;
 
-
     public HealthAdapter(@NonNull FirebaseRecyclerOptions<Health> options,Context context) {
         super(options);
         this.context = context;
