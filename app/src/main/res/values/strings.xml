@@ -124,4 +124,11 @@
     <string name="countdown_timer">Countdown Timer</string>
     <string name="edit_workout_topic">Edit Workout</string>
     <string name="bmi_topic">BMI Calculator</string>
+
+    <string name="add_health">Add My Health</string>
+    <string name="health_disease_name">Disease Name</string>
+    <string name="health_description">Description</string>
+    <string name="health_last_checkup_date">Last CheckUp Date</string>
+    <string name="health_next_checkup_date">Next CheckUp Date</string>
+    <string name="edit_health">Edit My Health</string>
 </resources>
