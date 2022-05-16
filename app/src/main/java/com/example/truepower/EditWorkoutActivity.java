@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -16,6 +17,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -109,14 +111,24 @@ public class EditWorkoutActivity extends AppCompatActivity implements AdapterVie
         String W_workoutRepetitionVar = workoutRepetitionVar.getSelectedItem().toString();
         String W_workoutTimeVar = workoutTimeVar.getSelectedItem().toString();
         String id = bundle.getString("id");
+
+
         if (TextUtils.isEmpty(W_workoutName)) {
-            Toast.makeText(EditWorkoutActivity.this, "Workout name is required !", Toast.LENGTH_SHORT).show();
+            workoutName.setError("Workout name is required !");
         }
-        if (W_workoutRepetitionVar.equals("Workout Repetitions")) {
-            Toast.makeText(EditWorkoutActivity.this, "Select a Valid Repetition !", Toast.LENGTH_SHORT).show();
+        if (W_workoutRepetitionVar.equals("Repetition")) {
+            TextView errorText = (TextView)workoutRepetitionVar.getSelectedView();
+            errorText.setTextColor(Color.RED);
+            errorText.setText("Set repetition");
+            errorText.setError("Set repetition");
+            return;
         }
-        if (W_workoutTimeVar.equals("Workout Time")) {
-            Toast.makeText(EditWorkoutActivity.this, "Select a Valid Time ! ", Toast.LENGTH_SHORT).show();
+        if (W_workoutTimeVar.equals("Time")) {
+            TextView errorText = (TextView)workoutTimeVar.getSelectedView();
+            errorText.setTextColor(Color.RED);
+            errorText.setText("Select Workout Time");
+            errorText.setError("Select Workout Time");
+            return;
         }
         Workout updateWorkout = new Workout(id, W_workoutName, W_workoutRepetitionVar, W_workoutTimeVar);
         workout.child(id).setValue(updateWorkout).addOnCompleteListener(new OnCompleteListener<Void>() {
