@@ -135,7 +135,7 @@ public class AddMealActivity extends AppCompatActivity implements AdapterView.On
 
                     }else{
 
-                        Toast.makeText(AddMealActivity.this,"Error",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddMealActivity.this,"Error : "+task.getException().getMessage(),Toast.LENGTH_SHORT).show();
 
                     }
                 }
