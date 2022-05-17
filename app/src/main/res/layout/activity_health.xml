@@ -38,7 +38,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="My Health"
+            android:text="View Health"
             android:textColor="@color/white"
             android:textSize="40sp"
             android:textStyle="italic" />
