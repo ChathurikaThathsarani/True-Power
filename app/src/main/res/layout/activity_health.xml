@@ -4,26 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wave"
     tools:context=".HealthActivity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="132dp"
-        android:text="Health"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemBackground="@color/dark_green"
-        app:menu="@menu/menu_navigation_home"
         android:layout_alignParentBottom="true"
+        app:itemBackground="@color/dark_green"
         app:itemIconTint="@color/white"
-        />
+        app:menu="@menu/menu_navigation_home" />
+
+
+    <LinearLayout
+        android:id="@+id/lyTop"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:onClick="addHealth"
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_add"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="My Health"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="italic" />
+
+
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/health_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="637dp"
+        android:layout_below="@id/lyTop"
+        android:layout_marginBottom="50dp" />
+
+
+
+
 
 </RelativeLayout>
