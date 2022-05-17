@@ -14,10 +14,12 @@
         android:theme="@style/Theme.TruePower">
         <activity
             android:name=".EditHealth"
-            android:exported="false" />
+            android:exported="true"
+            android:label="Edit Health"/>
         <activity
             android:name=".AddHealth"
-            android:exported="false" />
+            android:exported="true"
+            android:label="Add Health"/>
         <activity
             android:name=".MusicActivity"
             android:exported="true"
