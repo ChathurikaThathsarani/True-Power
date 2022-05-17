@@ -120,7 +120,7 @@ public class AddMealActivity extends AppCompatActivity implements AdapterView.On
         if(TextUtils.isEmpty(m_calories)){
             calories.setError("Calorie count is required !");
         }
-        else{
+        else {
             String id =meal.push().getKey();
             Meal newMeal = new Meal(id,m_name,m_category,m_type,m_calories);
             meal.child(id).setValue(newMeal).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -135,7 +135,7 @@ public class AddMealActivity extends AppCompatActivity implements AdapterView.On
 
                     }else{
 
-                        Toast.makeText(AddMealActivity.this,"Error",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddMealActivity.this,"Error : "+task.getException().getMessage(),Toast.LENGTH_SHORT).show();
 
                     }
                 }

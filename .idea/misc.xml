@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Local Disk D/Sliit/2 year/semester 2/IT2010/anoroid app/True-Power/app/src/main/res/layout/activity_add_health.xml" value="0.3625" />
+        <entry key="..\:/Local Disk D/Sliit/2 year/semester 2/IT2010/anoroid app/True-Power/app/src/main/res/layout/activity_edit_health.xml" value="0.3484375" />
+        <entry key="..\:/Local Disk D/Sliit/2 year/semester 2/IT2010/anoroid app/True-Power/app/src/main/res/layout/activity_health.xml" value="0.3625" />
+        <entry key="..\:/Local Disk D/Sliit/2 year/semester 2/IT2010/anoroid app/True-Power/app/src/main/res/layout/activity_user_profile.xml" value="0.3625" />
+        <entry key="..\:/Local Disk D/Sliit/2 year/semester 2/IT2010/anoroid app/True-Power/app/src/main/res/layout/ly_health_card.xml" value="0.3625" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/drawable-xxxhdpi/round_border_delete.xml" value="0.25416666666666665" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/drawable/ic_baseline_age.xml" value="0.278125" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/drawable/ic_baseline_email.xml" value="0.37083333333333335" />
@@ -22,6 +27,7 @@
         <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/layout/activity_meal.xml" value="0.33" />
+        <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/layout/activity_music.xml" value="0.23015873015873015" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/layout/activity_register.xml" value="0.33" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/layout/activity_routine.xml" value="0.266015625" />
         <entry key="..\:/SLIIT/2nd Year/2nd Semester/Mobile Application Development/True-Power/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
@@ -61,6 +67,7 @@
         <entry key="..\:/Users/Tech/Desktop/SLIIT/app/src/main/res/menu/menu_navigation_home.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Tech/Videos/MAD/True-Power/app/src/main/res/layout/activity_add_routine.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Tech/Videos/MAD/True-Power/app/src/main/res/layout/activity_bmrcalculator.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Tech/Videos/MAD_T12/True-Power/app/src/main/res/layout/activity_bmrcalculator_test.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Tech/Videos/MAD_TEST/True-Power/app/src/main/res/layout/activity_add_meal.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/Tech/Videos/MAD_TEST/True-Power/app/src/main/res/layout/activity_add_routine.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/Tech/Videos/MAD_TEST/True-Power/app/src/main/res/layout/activity_edit_meal.xml" value="0.1793478260869565" />
@@ -116,7 +123,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.33" />
+        <option name="scale" value="0.35052083333333334" />
       </ProjectState>
     </option>
   </component>
